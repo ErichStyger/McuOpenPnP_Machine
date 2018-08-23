@@ -40,30 +40,12 @@
    <part id="none" height-units="Millimeters" height="0.0" package-id="FIDUCIAL-1X2" speed="1.0"/>
    <part id="R_0805-62" height-units="Millimeters" height="0.5" package-id="R_0805" speed="1.0"/>
    <part id="R_0603-1.2k" height-units="Millimeters" height="0.5" package-id="R0603" speed="1.0"/>
-   <part id="220u" height-units="Millimeters" height="0.0" package-id="CP_Elec_6.3x7.7" speed="1.0"/>
-   <part id="1u" height-units="Millimeters" height="0.0" package-id="C_0805" speed="1.0"/>
-   <part id="3n3" height-units="Millimeters" height="0.0" package-id="C_0805" speed="1.0"/>
-   <part id="100n" height-units="Millimeters" height="0.0" package-id="C_0805" speed="1.0"/>
-   <part id="22u" height-units="Millimeters" height="0.0" package-id="C_0805" speed="1.0"/>
-   <part id="470p" height-units="Millimeters" height="0.0" package-id="C_0805" speed="1.0"/>
-   <part id="10n" height-units="Millimeters" height="0.0" package-id="C_0805" speed="1.0"/>
    <part id="LED" height-units="Millimeters" height="0.0" package-id="Green                                LED_0805" speed="1.0"/>
    <part id="STTH4R02U" height-units="Millimeters" height="0.0" package-id="D_SMB" speed="1.0"/>
    <part id="Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" height-units="Millimeters" height="0.0" package-id="Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" speed="1.0"/>
    <part id="GS2" height-units="Millimeters" height="0.0" package-id="GS2" speed="1.0"/>
    <part id="NX7002AKVL" height-units="Millimeters" height="0.0" package-id="SOT-23" speed="1.0"/>
-   <part id="1M" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
    <part id="N/P" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
-   <part id="330" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
-   <part id="470" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
-   <part id="10k" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
-   <part id="30k" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
-   <part id="160k" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
-   <part id="39k" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
-   <part id="100k" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
-   <part id="180" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
-   <part id="4k7" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
-   <part id="0" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
    <part id="SSSS811101" height-units="Millimeters" height="0.0" package-id="SW_SPDT_PCM12" speed="1.0"/>
    <part id="B3FS-1010" height-units="Millimeters" height="0.0" package-id="SW_SPST_B3U-3000P-B" speed="1.0"/>
    <part id="DRV5013" height-units="Millimeters" height="0.0" package-id="SOT-23" speed="1.0"/>
@@ -74,21 +56,21 @@
    <part id="MIC1557" height-units="Millimeters" height="0.0" package-id="SOT-23-5" speed="1.0"/>
    <part id="SN74LVC1G18" height-units="Millimeters" height="0.0" package-id="SOT-23-6" speed="1.0"/>
    <part id="SSM6N7002KFU,LF" height-units="Millimeters" height="0.0" package-id="SOT-363_SC-70-6" speed="1.0"/>
-   <part id="C_0805-22u" height-units="Millimeters" height="0.0" package-id="C_0805" speed="1.0"/>
-   <part id="C_0805-470p" height-units="Millimeters" height="0.0" package-id="C_0805" speed="1.0"/>
+   <part id="C_0805-22u" height-units="Millimeters" height="0.5" package-id="C_0805" speed="1.0"/>
+   <part id="C_0805-470p" height-units="Millimeters" height="0.5" package-id="C_0805" speed="1.0"/>
    <part id="C_0805-10n" height-units="Millimeters" height="0.0" package-id="C_0805" speed="1.0"/>
    <part id="Green                                LED_0805-LED" height-units="Millimeters" height="0.0" package-id="Green                                LED_0805" speed="1.0"/>
    <part id="D_SMB-STTH4R02U" height-units="Millimeters" height="0.0" package-id="D_SMB" speed="1.0"/>
    <part id="Fiducial_1mm_Dia_2.54mm_Outer_CopperTop-Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" height-units="Millimeters" height="0.0" package-id="Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" speed="1.0"/>
    <part id="GS2-GS2" height-units="Millimeters" height="0.0" package-id="GS2" speed="1.0"/>
    <part id="SOT-23-NX7002AKVL" height-units="Millimeters" height="0.0" package-id="SOT-23" speed="1.0"/>
-   <part id="R_0805-1M" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
+   <part id="R_0805-1M" height-units="Millimeters" height="0.5" package-id="R_0805" speed="1.0"/>
    <part id="R_0805-N/P" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
-   <part id="R_0805-330" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
-   <part id="R_0805-30k" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
-   <part id="R_0805-160k" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
-   <part id="R_0805-39k" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
-   <part id="R_0805-180" height-units="Millimeters" height="0.0" package-id="R_0805" speed="1.0"/>
+   <part id="R_0805-330" height-units="Millimeters" height="0.5" package-id="R_0805" speed="1.0"/>
+   <part id="R_0805-30k" height-units="Millimeters" height="0.5" package-id="R_0805" speed="1.0"/>
+   <part id="R_0805-160k" height-units="Millimeters" height="0.5" package-id="R_0805" speed="1.0"/>
+   <part id="R_0805-39k" height-units="Millimeters" height="0.5" package-id="R_0805" speed="1.0"/>
+   <part id="R_0805-180" height-units="Millimeters" height="0.5" package-id="R_0805" speed="1.0"/>
    <part id="SW_SPDT_PCM12-SSSS811101" height-units="Millimeters" height="0.0" package-id="SW_SPDT_PCM12" speed="1.0"/>
    <part id="SW_SPST_B3U-3000P-B-B3FS-1010" height-units="Millimeters" height="0.0" package-id="SW_SPST_B3U-3000P-B" speed="1.0"/>
    <part id="SOT-23-DRV5013" height-units="Millimeters" height="0.0" package-id="SOT-23" speed="1.0"/>
@@ -98,4 +80,5 @@
    <part id="SOT-23-5-MIC1557" height-units="Millimeters" height="0.0" package-id="SOT-23-5" speed="1.0"/>
    <part id="SOT-23-6-SN74LVC1G18" height-units="Millimeters" height="0.0" package-id="SOT-23-6" speed="1.0"/>
    <part id="SOT-363_SC-70-6-SSM6N7002KFU,LF" height-units="Millimeters" height="0.0" package-id="SOT-363_SC-70-6" speed="1.0"/>
+   <part id="C_0603-22p" height-units="Millimeters" height="1.0" package-id="C0805" speed="1.0"/>
 </openpnp-parts>

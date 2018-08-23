@@ -10,19 +10,19 @@
          <pad name="2" x="0.825" y="0.0" width="0.35" height="1.25" rotation="0.0" roundness="0.0"/>
       </footprint>
    </package>
-   <package version="1.1" id="R0603">
+   <package version="1.1" id="R0603" description="R0603">
       <footprint units="Millimeters" body-width="1.6" body-height="0.8">
          <pad name="1" x="-0.675" y="0.0" width="0.25" height="0.8" rotation="0.0" roundness="0.0"/>
          <pad name="2" x="0.675" y="0.0" width="0.25" height="0.8" rotation="0.0" roundness="0.0"/>
       </footprint>
    </package>
-   <package version="1.1" id="R0402">
+   <package version="1.1" id="R0402" description="R0402">
       <footprint units="Millimeters" body-width="1.0" body-height="0.5">
          <pad name="1" x="-0.375" y="0.0" width="0.25" height="0.5" rotation="0.0" roundness="0.0"/>
          <pad name="2" x="0.375" y="0.0" width="0.25" height="0.5" rotation="0.0" roundness="0.0"/>
       </footprint>
    </package>
-   <package version="1.1" id="R0201">
+   <package version="1.1" id="R0201" description="R0201">
       <footprint units="Millimeters" body-width="0.6" body-height="0.3">
          <pad name="1" x="-0.225" y="0.0" width="0.15" height="0.3" rotation="0.0" roundness="0.0"/>
          <pad name="2" x="0.225" y="0.0" width="0.15" height="0.3" rotation="0.0" roundness="0.0"/>
@@ -238,5 +238,11 @@
    </package>
    <package version="1.1" id="SOT-363_SC-70-6">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="C0603-0" description="C0603">
+      <footprint units="Millimeters" body-width="1.6" body-height="0.8">
+         <pad name="1" x="-0.675" y="0.0" width="0.25" height="0.8" rotation="0.0" roundness="0.0"/>
+         <pad name="2" x="0.675" y="0.0" width="0.25" height="0.8" rotation="0.0" roundness="0.0"/>
+      </footprint>
    </package>
 </openpnp-packages>
