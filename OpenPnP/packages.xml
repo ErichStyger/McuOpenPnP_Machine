@@ -206,4 +206,37 @@
    <package version="1.1" id="Crystal_SMD_0603-4pin_6.0x3.5mm">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
    </package>
+   <package version="1.1" id="Green                                LED_0805">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="D_SMB">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="Fiducial_1mm_Dia_2.54mm_Outer_CopperTop">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="GS2">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="SW_SPDT_PCM12">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="SW_SPST_B3U-3000P-B">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="SOIC-8_3.9x4.9mm_Pitch1.27mm">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="SOT-23-6">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="TSSOP-14_4.4x5mm_Pitch0.65mm">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="SOT-23-5">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="SOT-363_SC-70-6">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
 </openpnp-packages>

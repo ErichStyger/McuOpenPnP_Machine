@@ -38,7 +38,7 @@
                         <vacuum-level-part-on>0.0</vacuum-level-part-on>
                         <vacuum-level-part-off>0.0</vacuum-level-part-off>
                      </nozzle-tip>
-                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1521814161335" name="NT1_N08" allow-incompatible-packages="false">
+                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1521814161335" name="NT1_N08" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet">
                            <id>LED_0805</id>
                            <id>SOT-23</id>
@@ -324,7 +324,7 @@
             </nozzles>
             <actuators/>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1522162587547" name="DownCamera" looking="Down" settle-time-ms="2000" rotation="-1.9" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="HD USB Camera \\?\usb#vid_05a3&amp;pid_9310&amp;mi_00#6&amp;2f46afff&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" fps="30">
+               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1522162587547" name="DownCamera" looking="Down" settle-time-ms="2000" rotation="-1.9" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="HD USB Camera \\?\usb#vid_05a3&amp;pid_9310&amp;mi_00#6&amp;2f46afff&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" fps="20">
                   <units-per-pixel units="Millimeters" x="0.02109705" y="0.02053388" z="0.0" rotation="0.0"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -333,13 +333,17 @@
                      <camera-matrix length="9">3.313323113E-315, 0.0, 3.3982025112790883E-222, 1.69759663317E-313, 1.6975966328E-313, 1.7976931348623157E308, 0.0, 0.0, 0.0</camera-matrix>
                      <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
                   </calibration>
+                  <back-light-compensation property="BackLightCompensation" value="1" auto="false"/>
                   <brightness property="Brightness" value="82" auto="false"/>
                   <contrast property="Contrast" value="128" auto="false"/>
                   <exposure property="Exposure" value="-4" auto="true"/>
                   <focus property="Focus"/>
                   <gain property="Gain" value="0" auto="false"/>
                   <gamma property="Gamma" value="100" auto="false"/>
+                  <hue property="Hue" value="0" auto="false"/>
+                  <power-line-frequency property="PowerLineFrequency" value="1" auto="false"/>
                   <saturation property="Saturation" value="64" auto="false"/>
+                  <sharpness property="Sharpness" value="4" auto="false"/>
                   <white-balance property="WhiteBalance" value="4600" auto="true"/>
                   <zoom property="Zoom"/>
                </camera>
@@ -377,7 +381,7 @@
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" id="FDR1523370033899" name="MotorFeeder00" enabled="false" part-id="R_0805-100k" retry-count="3" actuator-name="MotorFeeder0" actuator-type="Double" actuator-value="850.0" post-pick-actuator-name="MotorFeeder0" post-pick-actuator-type="Double" post-pick-actuator-value="851.0">
             <location units="Millimeters" x="26.013" y="-370.889" z="-11.0" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="FDR1524746282755" name="Black00" enabled="true" part-id="R_0805-100k" retry-count="0" tape-type="WhitePaper" vision-enabled="true" feed-count="1">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="FDR1524746282755" name="Black00" enabled="true" part-id="R_0805-100k" retry-count="0" tape-type="WhitePaper" vision-enabled="true" feed-count="2">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <reference-hole-location units="Millimeters" x="158.766" y="-208.8" z="-10.5" rotation="0.0"/>
             <last-hole-location units="Millimeters" x="154.769" y="-208.701" z="-10.5" rotation="0.0"/>
@@ -777,13 +781,17 @@
                <camera-matrix length="9">2.888516617E-315, 0.0, 2.8462250436676484E-306, 1.69759663317E-313, 1.6975966328E-313, 1.7976931348623157E308, 0.0, 0.0, 0.0</camera-matrix>
                <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
             </calibration>
+            <back-light-compensation property="BackLightCompensation" value="1" auto="false"/>
             <brightness property="Brightness" value="-128" auto="false"/>
             <contrast property="Contrast" value="149" auto="false"/>
             <exposure property="Exposure" value="-4" auto="true"/>
             <focus property="Focus"/>
             <gain property="Gain" value="0" auto="false"/>
             <gamma property="Gamma" value="100" auto="false"/>
+            <hue property="Hue" value="0" auto="false"/>
+            <power-line-frequency property="PowerLineFrequency" value="1" auto="false"/>
             <saturation property="Saturation" value="60" auto="false"/>
+            <sharpness property="Sharpness" value="3" auto="false"/>
             <white-balance property="WhiteBalance" value="5127" auto="true"/>
             <zoom property="Zoom"/>
          </camera>
@@ -3388,6 +3396,27 @@
             </entry>
             <entry>
                <string>R_0805-32.768kHz</string>
+               <part-settings enabled="false">
+                  <pipeline>
+                     <stages>
+                        <cv-stage class="org.openpnp.vision.pipeline.stages.CreateFootprintTemplateImage" name="template" enabled="true"/>
+                        <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="debug_template" enabled="true" prefix="fidloc_template_" suffix=".png"/>
+                        <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="template_gray" enabled="true" conversion="Bgr2Gray"/>
+                        <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="image" enabled="true" settle-first="true"/>
+                        <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="image_gray" enabled="true" conversion="Bgr2Gray"/>
+                        <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="debug_original" enabled="true" prefix="fidloc_original_" suffix=".png"/>
+                        <cv-stage class="org.openpnp.vision.pipeline.stages.MatchTemplate" name="match_template" enabled="true" template-stage-name="template_gray" threshold="0.699999988079071" corr="1.0" normalize="true"/>
+                        <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recall_image" enabled="true" image-stage-name="image"/>
+                        <cv-stage class="org.openpnp.vision.pipeline.stages.DrawTemplateMatches" name="draw_matches" enabled="true" template-matches-stage-name="match_template"/>
+                        <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertModelToKeyPoints" name="results" enabled="true" model-stage-name="match_template"/>
+                        <cv-stage class="org.openpnp.vision.pipeline.stages.DrawKeyPoints" name="draw_keypoints" enabled="true" key-points-stage-name="results"/>
+                        <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="debug_results" enabled="true" prefix="fidloc_results_" suffix=".png"/>
+                     </stages>
+                  </pipeline>
+               </part-settings>
+            </entry>
+            <entry>
+               <string>Fiducial_1mm_Dia_2.54mm_Outer_CopperTop-Fiducial_1mm_Dia_2.54mm_Outer_CopperTop</string>
                <part-settings enabled="false">
                   <pipeline>
                      <stages>
