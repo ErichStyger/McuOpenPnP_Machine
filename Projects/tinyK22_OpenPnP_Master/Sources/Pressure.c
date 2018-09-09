@@ -40,7 +40,7 @@ uint8_t PRESSURE_ParseCommand(const unsigned char* cmd, bool *handled, const CLS
   return res;
 }
 
-static void AppTask(void *param) {
+static void PressureTask(void *param) {
   unsigned char ch = 'A';
   uint8_t res;
 
@@ -64,7 +64,7 @@ void PRESSURE_Init(void) {
     for(;;){} /* out of memory? */
   }
   vQueueAddToRegistry(SQUEUE_Queue, "queue");
-  if (xTaskCreate(AppTask, "App", 500/sizeof(StackType_t), NULL, tskIDLE_PRIORITY+1, NULL) != pdPASS) {
+  if (xTaskCreate(PressureTask, "Pressure", 500/sizeof(StackType_t), NULL, tskIDLE_PRIORITY+1, NULL) != pdPASS) {
     for(;;){} /* error! probably out of memory */
   }
 }
