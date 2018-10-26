@@ -29,7 +29,7 @@
 #include "Application.h"
 #include "RTT1.h"
 #include "KIN1.h"
-
+#include "PORT_PDD.h"
 #if PL_ENCODER_EN
   #include "encoder.h"
 #endif
@@ -302,6 +302,10 @@ static void COMM_task(void *param) {
  * Initialize Buffer and start task
  */
 void COMM_Init(void){
+  /* need pull-up on UART Rx pin (PTD2) */
+  PORT_PDD_SetPinPullSelect(PORTD_BASE_PTR, 2, PORT_PDD_PULL_UP);
+  PORT_PDD_SetPinPullEnable(PORTD_BASE_PTR, 2, PORT_PDD_PULL_ENABLE);
+
 	buffer[0] = '\0';
 	if (xTaskCreate(COMM_task, "Comm", 700/sizeof(StackType_t), NULL, tskIDLE_PRIORITY+1, NULL) != pdPASS) {
 		for(;;){} /* error! probably out of memory */
