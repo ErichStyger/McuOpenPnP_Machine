@@ -1,0 +1,1 @@
+This folder contains example OpenPnP configuration which is used for solder dispensing.
