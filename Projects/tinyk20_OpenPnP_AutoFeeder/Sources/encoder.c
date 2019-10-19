@@ -17,7 +17,7 @@
 
 #define ENC_QUEUE_LENGTH    (10)
 #define ENC_QUEUE_ITEM_SIZE (sizeof(int8_t))  /* -1 (backward) or 1 (forward) will be added for the steps */
-static xQueueHandle ENC_StepRequestQueue = NULL;
+static QueueHandle_t ENC_StepRequestQueue = NULL;
 
 void ENC_RequestSteps(int8_t steps) {
   if (xQueueSendToBack(ENC_StepRequestQueue, &steps, portMAX_DELAY)!=pdPASS) {
