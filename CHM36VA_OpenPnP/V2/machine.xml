@@ -444,7 +444,7 @@
             <changer-mid-location-2 units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <changer-mid-2-to-end-speed>1.0</changer-mid-2-to-end-speed>
             <changer-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <calibration angle-subdivisions="6" allow-misdetections="0" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="false" runout-compensation-algorithm="ModelCameraOffset" version="1.0" recalibration-trigger="NozzleTipChangeInJob" offset-threshold="0.0">
+            <calibration angle-subdivisions="6" allow-misdetections="0" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="false" runout-compensation-algorithm="ModelCameraOffset" version="2.0" recalibration-trigger="NozzleTipChangeInJob" offset-threshold="0.0">
                <pipeline>
                   <stages>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" settle-first="true" count="1"/>
@@ -489,9 +489,109 @@
          </command>
          <command type="MOVE_TO_COMMAND">
             <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {Rotation:E%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
+            <text><![CDATA[M400 ; Wait for moves to complete before returning]]></text>
          </command>
          <command type="MOVE_TO_COMPLETE_COMMAND">
             <text><![CDATA[M400 ; Wait for moves to complete before returning]]></text>
+         </command>
+         <command type="ENABLE_COMMAND">
+            <text><![CDATA[; Default ENABLE_COMMAND]]></text>
+            <text><![CDATA[M809   ; Turn off VAC]]></text>
+            <text><![CDATA[M801   ; Vacuum nozzle 1 off]]></text>
+            <text><![CDATA[M805   ; Vacuum nozzle 2 off]]></text>
+            <text><![CDATA[M814   ; Turn on DOWNLED]]></text>
+            <text><![CDATA[M810   ; Turn on UPLED]]></text>
+            <text><![CDATA[G4P750 ; Wait 750 milliseconds]]></text>
+            <text><![CDATA[M811   ; Turn off UPLED]]></text>
+         </command>
+         <command type="DISABLE_COMMAND">
+            <text><![CDATA[; Default DISABLE_COMMAND]]></text>
+            <text><![CDATA[M84    ; Disable all steppers]]></text>
+            <text><![CDATA[M815   ; Turn off DOWNLED]]></text>
+            <text><![CDATA[M811   ; Turn off UPLED]]></text>
+            <text><![CDATA[M813   ; Turn off BLOW]]></text>
+            <text><![CDATA[M809   ; Turn off VAC]]></text>
+            <text><![CDATA[M801   ; Vacuum nozzle 1 off]]></text>
+            <text><![CDATA[M805   ; Vacuum nozzle 2 off]]></text>
+         </command>
+         <command type="PUMP_ON_COMMAND">
+            <text><![CDATA[M808   ; Turn on VAC]]></text>
+         </command>
+         <command type="PUMP_OFF_COMMAND">
+            <text><![CDATA[M809   ; Turn off VAC]]></text>
+         </command>
+         <command head-mountable-id="N1" type="PICK_COMMAND">
+            <text><![CDATA[M800   ; N1VAC on]]></text>
+         </command>
+         <command head-mountable-id="N1" type="PLACE_COMMAND">
+            <text><![CDATA[M801  ; N1VAC off]]></text>
+         </command>
+         <command head-mountable-id="NOZ1579800191984" type="PICK_COMMAND">
+            <text><![CDATA[M804   ; N2VAC on]]></text>
+         </command>
+         <command head-mountable-id="NOZ1579800191984" type="PLACE_COMMAND">
+            <text><![CDATA[M805   ; N2VAC off]]></text>
+         </command>
+         <command head-mountable-id="A1" type="ACTUATOR_READ_COMMAND">
+            <text><![CDATA[M105 ; read temp]]></text>
+         </command>
+         <command head-mountable-id="A1" type="ACTUATOR_READ_REGEX">
+            <text><![CDATA[^ok V1:(?<Value>\d+\.\d+) /0.0 @0 V2:(?<n2vsense>\d+\.\d+) /0.0 @0]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799724154" type="ACTUATOR_READ_COMMAND">
+            <text><![CDATA[M105 ; read temp]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799724154" type="ACTUATOR_READ_REGEX">
+            <text><![CDATA[^ok V1:(?<n1vsense>\d+\.\d+) /0.0 @0 V2:(?<Value>\d+\.\d+) /0.0 @0]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799727896" type="ACTUATE_BOOLEAN_COMMAND">
+            <text><![CDATA[M80{True:0}{False:1} ; N1VAC M800 on / M801 off]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799730986" type="ACTUATE_BOOLEAN_COMMAND">
+            <text><![CDATA[M80{True:4}{False:5} ; N2VAC M804 on / M805 off]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799796417" type="ACTUATE_BOOLEAN_COMMAND">
+            <text><![CDATA[M81{True:6}{False:7} ; DRAGPIN M816 down / M817 release]]></text>
+            <text><![CDATA[G4P50 ; 100ms delay to deploy/retract]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799796417" type="ACTUATOR_READ_COMMAND">
+            <text><![CDATA[M119 ; DRAGPIN endstop status]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799796417" type="ACTUATOR_READ_REGEX">
+            <text><![CDATA[^X_min:\d Y_min:\d Z_min:\d pins- \(X\)P\d.\d+:\d \(Y\)P\d.\d+:\d \(Z\)P\d.\d+:\d \(Z\)P\d.\d+:(?<Value>\d)]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799734688" type="ACTUATOR_READ_COMMAND">
+            <text><![CDATA[M119 ; ZMIN endstop status]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799734688" type="ACTUATOR_READ_REGEX">
+            <text><![CDATA[^X_min:\d Y_min:\d Z_min:\d pins- \(X\)P\d.\d+:\d \(Y\)P\d.\d+:\d \(Z\)P\d.\d+:(?<Value>\d) \(Z\)P\d.\d+:\d]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799770025" type="ACTUATE_BOOLEAN_COMMAND">
+            <text><![CDATA[T2G92E0G0E5  ; LFEEDER]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799590369" type="ACTUATE_BOOLEAN_COMMAND">
+            <text><![CDATA[M80{True:8}{False:9} ; VAC M808 on / M809 off]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799601817" type="ACTUATE_BOOLEAN_COMMAND">
+            <text><![CDATA[M81{True:2}{False:3} ; BLOW M812 on / M813 off]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799618401" type="ACTUATE_BOOLEAN_COMMAND">
+            <text><![CDATA[M81{True:0}{False:1} ; UPLED M810 on / M811 off]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799618401" type="ACTUATE_DOUBLE_COMMAND">
+            <text><![CDATA[M810 S{IntegerValue}   ; UPLED PWM]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799620650" type="ACTUATE_BOOLEAN_COMMAND">
+            <text><![CDATA[M81{True:4}{False:5} ; DOWNLED M814 on / M815 off]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799620650" type="ACTUATE_DOUBLE_COMMAND">
+            <text><![CDATA[M814 S{IntegerValue}  ; DOWNLED PWM]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799624810" type="ACTUATE_BOOLEAN_COMMAND">
+            <text><![CDATA[M81{True:8}{False:9} ; CAMSW M818 on / M819 off]]></text>
+         </command>
+         <command head-mountable-id="ACT1579799653289" type="ACTUATE_BOOLEAN_COMMAND">
+            <text><![CDATA[T3G92E0G0E5  ; RFEEDER]]></text>
          </command>
          <sub-drivers class="java.util.ArrayList"/>
          <axes class="java.util.ArrayList">
