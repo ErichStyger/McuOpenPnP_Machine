@@ -546,12 +546,23 @@
             <axis name="z" type="Z" home-coordinate="0.0">
                <head-mountable-ids class="java.util.HashSet">
                   <string>N1</string>
+                  <string>N2</string>
                </head-mountable-ids>
+               <transform class="org.openpnp.machine.reference.driver.GcodeDriver$CamTransform" cam-radius="17.5" cam-wheel-radius="8.5" cam-wheel-gap="0.0">
+                  <negated-head-mountable-id>N2</negated-head-mountable-id>
+               </transform>
             </axis>
-            <axis name="rotation" type="Rotation" home-coordinate="0.0">
+            <axis name="c1" type="Rotation" home-coordinate="0.0">
                <head-mountable-ids class="java.util.HashSet">
-                  <string>*</string>
+                  <string>N1</string>
                </head-mountable-ids>
+               <pre-move-command><![CDATA[T0]]></pre-move-command>
+            </axis>
+            <axis name="c2" type="Rotation" home-coordinate="0.0">
+               <head-mountable-ids class="java.util.HashSet">
+                  <string>N2</string>
+               </head-mountable-ids>
+               <pre-move-command><![CDATA[T1]]></pre-move-command>
             </axis>
          </axes>
       </driver>
