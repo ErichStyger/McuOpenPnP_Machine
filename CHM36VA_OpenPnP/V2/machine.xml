@@ -51,17 +51,6 @@
                </actuator>
             </actuators>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.ImageCamera" id="C1" name="Top Camera" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" fps="24" width="640" height="480">
-                  <units-per-pixel units="Millimeters" x="0.01241135" y="0.01242236" z="0.0" rotation="0.0"/>
-                  <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-                  <safe-z value="0.0" units="Millimeters"/>
-                  <calibration enabled="false">
-                     <camera-matrix length="9">2.781498503086272E-307, 2.447635569341143E-307, 8.90104238867013E-307, 1.3796170925349683E-306, 2.7814883188275644E-307, 5.117982235714484E-307, 4.4504125477879174E-307, 1.3351156148467581E-306, 9.346070740522925E-307</camera-matrix>
-                     <distortion-coefficients length="5">3.44902066208904E-307, 1.2461085865957554E-306, 7.565753617060348E-307, 1.1571008789848962E-306, 1.4241790053886113E-306</distortion-coefficients>
-                  </calibration>
-                  <source-uri>classpath://samples/pnp-test/pnp-test.png</source-uri>
-               </camera>
                <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579800540239" name="Top Camera" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" fps="10.0">
                   <units-per-pixel units="Millimeters" x="0.01241135" y="0.01242236" z="0.0" rotation="0.0"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
@@ -303,17 +292,6 @@
          </feeder>
       </feeders>
       <cameras>
-         <camera class="org.openpnp.machine.reference.camera.SimulatedUpCamera" id="C2" name="Bottom" looking="Up" settle-time-ms="250" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false">
-            <units-per-pixel units="Millimeters" x="0.0134375" y="0.0134375" z="0.0" rotation="0.0"/>
-            <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
-            <head-offsets units="Millimeters" x="118.799" y="7.117" z="0.0" rotation="0.0"/>
-            <safe-z value="0.0" units="Millimeters"/>
-            <calibration enabled="false">
-               <camera-matrix length="9">3.5E-323, 0.0, 2.5E-323, NaN, 6.93224685617292E-310, 6.932247478583E-310, 0.0, 0.0, 0.0</camera-matrix>
-               <distortion-coefficients length="5">NaN, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
-            </calibration>
-            <error-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-         </camera>
          <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579538258033" name="Bottom Camera" looking="Up" settle-time-ms="250" rotation="0.0" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" fps="10.0">
             <units-per-pixel units="Millimeters" x="0.02777778" y="0.02777778" z="0.0" rotation="0.0"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
