@@ -1,5 +1,5 @@
 <openpnp-machine>
-   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="1.0">
+   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="0.52">
       <heads>
          <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1">
             <nozzles>
@@ -11,7 +11,7 @@
                   <safe-z value="0.0" units="Millimeters"/>
                   <vacuum-actuator-name>N1VAC</vacuum-actuator-name>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="NOZ1579800191984" name="N2" pick-dwell-milliseconds="100" place-dwell-milliseconds="100" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="NOZ1579800191984" name="N2" pick-dwell-milliseconds="100" place-dwell-milliseconds="100" current-nozzle-tip-id="TIP1579800676936" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>TIP1579800676936</string>
                   </compatible-nozzle-tip-ids>
@@ -51,8 +51,8 @@
                </actuator>
             </actuators>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579800540239" name="Top Camera" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" fps="10.0">
-                  <units-per-pixel units="Millimeters" x="0.01241135" y="0.01242236" z="0.0" rotation="0.0"/>
+               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579800540239" name="Top Camera" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="ATM Camera PIL  \\?\usb#vid_2c86&amp;pid_0206&amp;mi_00#7&amp;35556615&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="13" fps="10.0">
+                  <units-per-pixel units="Millimeters" x="0.01262626" y="0.01263823" z="0.0" rotation="0.0"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
@@ -60,18 +60,18 @@
                      <camera-matrix length="9">0.0, -8.691966632038E-311, 2.793465897E-315, 8.020654716068588E-44, 4.917400475304233E25, 3.8195934903E-313, 1.0E-323, 2.79269207E-315, 0.0</camera-matrix>
                      <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
                   </calibration>
-                  <back-light-compensation property="BackLightCompensation"/>
-                  <brightness property="Brightness"/>
-                  <contrast property="Contrast"/>
-                  <exposure property="Exposure"/>
+                  <back-light-compensation property="BackLightCompensation" value="121" auto="false"/>
+                  <brightness property="Brightness" value="0" auto="false"/>
+                  <contrast property="Contrast" value="3" auto="false"/>
+                  <exposure property="Exposure" value="-6" auto="true"/>
                   <focus property="Focus"/>
-                  <gain property="Gain"/>
-                  <gamma property="Gamma"/>
-                  <hue property="Hue"/>
-                  <power-line-frequency property="PowerLineFrequency"/>
-                  <saturation property="Saturation"/>
-                  <sharpness property="Sharpness"/>
-                  <white-balance property="WhiteBalance"/>
+                  <gain property="Gain" value="1" auto="false"/>
+                  <gamma property="Gamma" value="64" auto="false"/>
+                  <hue property="Hue" value="0" auto="false"/>
+                  <power-line-frequency property="PowerLineFrequency" value="1" auto="false"/>
+                  <saturation property="Saturation" value="72" auto="false"/>
+                  <sharpness property="Sharpness" value="1" auto="false"/>
+                  <white-balance property="WhiteBalance" value="4600" auto="true"/>
                   <zoom property="Zoom"/>
                </camera>
             </cameras>
@@ -84,10 +84,10 @@
       </heads>
       <signalers/>
       <feeders>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="F5" name="Upper Strips - 1" enabled="true" part-id="R0603-2K2" retry-count="3" pick-retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="0">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="F5" name="Strip 1" enabled="true" part-id="R0603-2K2" retry-count="3" pick-retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="1">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="138.715" y="88.244" z="0.0" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="139.057" y="84.226" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="297.356" y="314.859" z="-9.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="293.336" y="314.884" z="-9.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <tape-width value="8.0" units="Millimeters"/>
             <pipeline>
@@ -106,9 +106,9 @@
                </stages>
             </pipeline>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.BlindsFeeder" id="FDR1579781000955" name="BlindsFeeder" enabled="false" part-id="R0603-2K2" retry-count="3" pick-retry-count="3" normalize="true" vision-enabled="true" feed-count="0" feeder-no="0" feeders-total="0" pocket-count="0" first-pocket="1" last-pocket="0" push-speed="0.025" fid-loc-max-passes="3" fid-loc-tolerance-mm="0.5" pocket-pos-tolerance-mm="0.1" cover-type="BlindsCover" cover-actuation="OpenOnJobStart">
+         <feeder class="org.openpnp.machine.reference.feeder.BlindsFeeder" id="FDR1579781000955" name="BlindsFeeder" enabled="false" part-id="R0603-2K2" retry-count="3" pick-retry-count="3" normalize="true" vision-enabled="true" feed-count="0" feeder-no="1" feeders-total="1" pocket-count="0" first-pocket="1" last-pocket="0" push-speed="0.025" fid-loc-max-passes="3" fid-loc-tolerance-mm="0.5" pocket-pos-tolerance-mm="0.1" cover-type="BlindsCover" cover-actuation="OpenOnJobStart">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <fiducial-1-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <fiducial-1-location units="Millimeters" x="248.694" y="200.88" z="0.0" rotation="0.0"/>
             <fiducial-2-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <fiducial-3-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <tape-length value="0.0" units="Millimeters"/>
@@ -139,7 +139,7 @@
          </feeder>
       </feeders>
       <cameras>
-         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579538258033" name="Bottom Camera" looking="Up" settle-time-ms="250" rotation="0.0" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" fps="10.0">
+         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579538258033" name="Bottom Camera" looking="Up" settle-time-ms="250" rotation="0.0" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="Global Shutter Camera \\?\usb#vid_05a3&amp;pid_0144&amp;mi_00#6&amp;297482de&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" fps="10.0">
             <units-per-pixel units="Millimeters" x="0.02777778" y="0.02777778" z="0.0" rotation="0.0"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
             <head-offsets units="Millimeters" x="164.795" y="27.002" z="0.0" rotation="0.0"/>
@@ -148,18 +148,18 @@
                <camera-matrix length="9">6.95181195069896E-310, 6.95181195056774E-310, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
                <distortion-coefficients length="5">4.9E-324, 7.63918484925E-313, 3.5604305343967845E-307, 1.6021930623879718E-306, 2.447635570273665E-307</distortion-coefficients>
             </calibration>
-            <back-light-compensation property="BackLightCompensation"/>
-            <brightness property="Brightness"/>
-            <contrast property="Contrast"/>
-            <exposure property="Exposure"/>
+            <back-light-compensation property="BackLightCompensation" value="28" auto="false"/>
+            <brightness property="Brightness" value="-34" auto="false"/>
+            <contrast property="Contrast" value="13" auto="false"/>
+            <exposure property="Exposure" value="-9" auto="false"/>
             <focus property="Focus"/>
-            <gain property="Gain"/>
-            <gamma property="Gamma"/>
-            <hue property="Hue"/>
-            <power-line-frequency property="PowerLineFrequency"/>
-            <saturation property="Saturation"/>
-            <sharpness property="Sharpness"/>
-            <white-balance property="WhiteBalance"/>
+            <gain property="Gain" value="16" auto="false"/>
+            <gamma property="Gamma" value="100" auto="false"/>
+            <hue property="Hue" value="-903" auto="false"/>
+            <power-line-frequency property="PowerLineFrequency" value="1" auto="false"/>
+            <saturation property="Saturation" value="58" auto="false"/>
+            <sharpness property="Sharpness" value="2" auto="false"/>
+            <white-balance property="WhiteBalance" value="2800" auto="false"/>
             <zoom property="Zoom"/>
          </camera>
       </cameras>
@@ -185,6 +185,10 @@
             <safe-z value="0.0" units="Millimeters"/>
          </actuator>
          <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1579799653289" name="RFEEDER" index="0">
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <safe-z value="0.0" units="Millimeters"/>
+         </actuator>
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1579872347042" name="DragPinMomentarily" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <safe-z value="0.0" units="Millimeters"/>
          </actuator>
@@ -410,8 +414,8 @@
             <diameter-low value="0.0" units="Millimeters"/>
          </nozzle-tip>
       </nozzle-tips>
-      <driver class="org.openpnp.machine.reference.driver.GcodeDriver" communications="serial" connection-keep-alive="true" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-0.2" backlash-offset-y="0.2" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="8000" connect-wait-time-milliseconds="3000" visual-homing-enabled="false" backslash-escaped-characters-enabled="false" name="GcodeDriver">
-         <serial line-ending-type="LF" port-name="" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
+      <driver class="org.openpnp.machine.reference.driver.GcodeDriver" communications="serial" connection-keep-alive="true" units="Millimeters" max-feed-rate="20000" backlash-offset-x="-0.2" backlash-offset-y="0.2" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="8000" connect-wait-time-milliseconds="3000" visual-homing-enabled="false" backslash-escaped-characters-enabled="false" name="GcodeDriver">
+         <serial line-ending-type="LF" port-name="COM6" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
          <tcp line-ending-type="LF" ip-address="127.0.0.1" port="23" name="TcpCommunications"/>
          <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          <command type="COMMAND_CONFIRM_REGEX">
@@ -530,6 +534,11 @@
          </command>
          <command head-mountable-id="ACT1579799653289" type="ACTUATE_BOOLEAN_COMMAND">
             <text><![CDATA[T3G92E0G0E5  ; RFEEDER]]></text>
+         </command>
+         <command head-mountable-id="ACT1579872347042" type="ACTUATE_BOOLEAN_COMMAND">
+            <text><![CDATA[M81{True:6}{False:7} ; M816/817]]></text>
+            <text><![CDATA[G4P50 ; 100ms delay to deploy/retract]]></text>
+            <text><![CDATA[M817  ; off]]></text>
          </command>
          <sub-drivers class="java.util.ArrayList"/>
          <axes class="java.util.ArrayList">

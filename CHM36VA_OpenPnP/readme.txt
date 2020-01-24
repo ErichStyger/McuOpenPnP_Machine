@@ -40,9 +40,13 @@ Head: N1 is left, N2 is right
 H1:N1VSENSE	
 	ACTUATOR_READ_COMMAND		M105 ; read temp
 	ACTUATOR_READ_REGEX		^ok V1:(?<Value>\d+\.\d+) /0.0 @0 V2:(?<n2vsense>\d+\.\d+) /0.0 @0
+ok V1:125.1 /0.0 @0 V2:123.7 /0.0 @0 
+
+
 H1:N2VSENSE
 	ACTUATOR_READ_COMMAND		M105 ; read temp
 	ACTUATOR_READ_REGEX		^ok V1:(?<n1vsense>\d+\.\d+) /0.0 @0 V2:(?<Value>\d+\.\d+) /0.0 @0
+ok V1:125.1 /0.0 @0 V2:123.7 /0.0 @0 
 
 H1:N1VAC	N1 vaccuum on/off
 	ACTUATE_BOOLEAN_COMMAND		M80{True:0}{False:1} ; M800/801
@@ -60,6 +64,7 @@ H1:DRAGPIN (caution: do not enable it for more than a second, otherwise it will 
 H1:ZMIN
 	ACTUATOR_READ_COMMAND		M119 ; endstop status
 	ACTUATOR_READ_REGEX		^X_min:\d Y_min:\d Z_min:\d pins- \(X\)P\d.\d+:\d \(Y\)P\d.\d+:\d \(Z\)P\d.\d+:(?<Value>\d) \(Z\)P\d.\d+:\d
+X_min:0 Y_min:0 Z_min:1 pins- (X)P4.4:0 (Y)P4.3:0 (Z)P2.13:1 (Z)P4.2:1 
 
 H1:LFEEDER
 	ACTUATE_BOOLEAN_COMMAND		T2G92E0G0E5
