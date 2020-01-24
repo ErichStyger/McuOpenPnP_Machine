@@ -3,13 +3,13 @@
       <heads>
          <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1">
             <nozzles>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="N1" name="N1" pick-dwell-milliseconds="100" place-dwell-milliseconds="100" current-nozzle-tip-id="NT1" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="N1" name="N1" pick-dwell-milliseconds="1000" place-dwell-milliseconds="1000" current-nozzle-tip-id="NT1" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>NT1</string>
                   </compatible-nozzle-tip-ids>
                   <head-offsets units="Millimeters" x="33.433" y="-18.029" z="-8.5" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
-                  <vacuum-actuator-name>N1VAC</vacuum-actuator-name>
+                  <vacuum-actuator-name>N1VSENSE</vacuum-actuator-name>
                </nozzle>
                <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="NOZ1579800191984" name="N2" pick-dwell-milliseconds="100" place-dwell-milliseconds="100" current-nozzle-tip-id="TIP1579800676936" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
@@ -17,7 +17,7 @@
                   </compatible-nozzle-tip-ids>
                   <head-offsets units="Millimeters" x="56.189" y="-16.892" z="-8.5" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
-                  <vacuum-actuator-name>N2VAC</vacuum-actuator-name>
+                  <vacuum-actuator-name>N2VSENSE</vacuum-actuator-name>
                </nozzle>
             </nozzles>
             <actuators>
@@ -47,6 +47,10 @@
                </actuator>
                <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1579799796417" name="DRAGPIN" index="0">
                   <head-offsets units="Millimeters" x="45.42" y="19.79" z="0.0" rotation="0.0"/>
+                  <safe-z value="0.0" units="Millimeters"/>
+               </actuator>
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1579879539027" name="VAC" index="0">
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </actuator>
             </actuators>
@@ -79,15 +83,15 @@
             <soft-limits-enabled>false</soft-limits-enabled>
             <min-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <max-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <pump-actuator-name>N1VAC</pump-actuator-name>
+            <pump-actuator-name>VAC</pump-actuator-name>
          </head>
       </heads>
       <signalers/>
       <feeders>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="F5" name="Strip 1" enabled="true" part-id="R0603-2K2" retry-count="3" pick-retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="1">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="F5" name="Strip 1" enabled="true" part-id="R0603-2K2" retry-count="3" pick-retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="5">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="297.356" y="314.859" z="-9.0" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="293.336" y="314.884" z="-9.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="296.556" y="315.101" z="-9.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="292.546" y="315.131" z="-9.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <tape-width value="8.0" units="Millimeters"/>
             <pipeline>
@@ -148,17 +152,17 @@
                <camera-matrix length="9">6.95181195069896E-310, 6.95181195056774E-310, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
                <distortion-coefficients length="5">4.9E-324, 7.63918484925E-313, 3.5604305343967845E-307, 1.6021930623879718E-306, 2.447635570273665E-307</distortion-coefficients>
             </calibration>
-            <back-light-compensation property="BackLightCompensation" value="28" auto="false"/>
-            <brightness property="Brightness" value="-34" auto="false"/>
-            <contrast property="Contrast" value="13" auto="false"/>
+            <back-light-compensation property="BackLightCompensation" value="36" auto="false"/>
+            <brightness property="Brightness" value="-64" auto="false"/>
+            <contrast property="Contrast" value="10" auto="false"/>
             <exposure property="Exposure" value="-9" auto="false"/>
             <focus property="Focus"/>
-            <gain property="Gain" value="16" auto="false"/>
-            <gamma property="Gamma" value="100" auto="false"/>
-            <hue property="Hue" value="-903" auto="false"/>
+            <gain property="Gain" value="125" auto="false"/>
+            <gamma property="Gamma" value="126" auto="false"/>
+            <hue property="Hue" value="-2000" auto="false"/>
             <power-line-frequency property="PowerLineFrequency" value="1" auto="false"/>
-            <saturation property="Saturation" value="58" auto="false"/>
-            <sharpness property="Sharpness" value="2" auto="false"/>
+            <saturation property="Saturation" value="19" auto="false"/>
+            <sharpness property="Sharpness" value="3" auto="false"/>
             <white-balance property="WhiteBalance" value="2800" auto="false"/>
             <zoom property="Zoom"/>
          </camera>
@@ -372,10 +376,10 @@
                <offset-threshold-length value="0.5" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
             </calibration>
-            <vacuum-level-part-on-low>100.0</vacuum-level-part-on-low>
-            <vacuum-level-part-on-high>140.0</vacuum-level-part-on-high>
-            <vacuum-level-part-off-low>170.0</vacuum-level-part-off-low>
-            <vacuum-level-part-off-high>190.0</vacuum-level-part-off-high>
+            <vacuum-level-part-on-low>135.0</vacuum-level-part-on-low>
+            <vacuum-level-part-on-high>200.0</vacuum-level-part-on-high>
+            <vacuum-level-part-off-low>100.0</vacuum-level-part-off-low>
+            <vacuum-level-part-off-high>135.0</vacuum-level-part-off-high>
             <diameter-low value="0.0" units="Millimeters"/>
          </nozzle-tip>
          <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1579800676936" name="NT2" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" is-push-and-drag-allowed="false">
@@ -463,10 +467,17 @@
             <text><![CDATA[M809   ; Turn off VAC]]></text>
          </command>
          <command head-mountable-id="N1" type="PICK_COMMAND">
+            <text><![CDATA[M808   ; Turn on VAC]]></text>
+            <text><![CDATA[G4P250 ; Wait 250 milliseconds]]></text>
             <text><![CDATA[M800   ; N1VAC on]]></text>
          </command>
          <command head-mountable-id="N1" type="PLACE_COMMAND">
-            <text><![CDATA[M801  ; N1VAC off]]></text>
+            <text><![CDATA[M809   ; VAC off ]]></text>
+            <text><![CDATA[M801   ; N1VAC off]]></text>
+            <text><![CDATA[G4P250 ; Wait 250 milliseconds]]></text>
+            <text><![CDATA[M812   ; BLOW on]]></text>
+            <text><![CDATA[G4P250 ; Wait 250 milliseconds]]></text>
+            <text><![CDATA[M813   ; BLOW off]]></text>
          </command>
          <command head-mountable-id="NOZ1579800191984" type="PICK_COMMAND">
             <text><![CDATA[M804   ; N2VAC on]]></text>
@@ -539,6 +550,9 @@
             <text><![CDATA[M81{True:6}{False:7} ; M816/817]]></text>
             <text><![CDATA[G4P50 ; 100ms delay to deploy/retract]]></text>
             <text><![CDATA[M817  ; off]]></text>
+         </command>
+         <command head-mountable-id="ACT1579879539027" type="ACTUATE_BOOLEAN_COMMAND">
+            <text><![CDATA[M80{True:8}{False:9} ; VAC M808 on / M809 off]]></text>
          </command>
          <sub-drivers class="java.util.ArrayList"/>
          <axes class="java.util.ArrayList">

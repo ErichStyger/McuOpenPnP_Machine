@@ -50,9 +50,11 @@ ok V1:125.1 /0.0 @0 V2:123.7 /0.0 @0
 
 H1:N1VAC	N1 vaccuum on/off
 	ACTUATE_BOOLEAN_COMMAND		M80{True:0}{False:1} ; M800/801
+On: RED led ON on soleonid
 
 H1:N2VAC	N2 vaccuum on/off
 	ACTUATE_BOOLEAN_COMMAND		M80{True:4}{False:5} ; M804/805
+On: RED led ON on soleonid
 
 H1:DRAGPIN (caution: do not enable it for more than a second, otherwise it will be damaged!)
 	ACTUATE_BOOLEAN_COMMAND		
@@ -69,3 +71,11 @@ X_min:0 Y_min:0 Z_min:1 pins- (X)P4.4:0 (Y)P4.3:0 (Z)P2.13:1 (Z)P4.2:1
 H1:LFEEDER
 	ACTUATE_BOOLEAN_COMMAND		T2G92E0G0E5
 
+
+
+H1VAC  On (RED) + VAC => Teil halten
+H1VAC  Off(...) + BLOW => Teil blasen
+
+Vac levels:
+normal: 123
+part on: >140
