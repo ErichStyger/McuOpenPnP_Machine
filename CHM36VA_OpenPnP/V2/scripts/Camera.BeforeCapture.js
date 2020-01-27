@@ -3,7 +3,9 @@
  * for the up camera and down camera are turned on and off based on which camera
  * needs to capture.
  */
+
  /*
+ print('*************** Script Camera.BeforeCapture.js ****************');
  var upCamLights = machine.getActuatorByName("UPLED");
  var downCamLights = machine.getActuatorByName("DOWNLED");
 
@@ -23,5 +25,6 @@ else if (camera.looking == Packages.org.openpnp.spi.Camera.Looking.Down) {
 	    downCamLights.actuate(true);
 	}
 }
+ print('*************** END Camera.BeforeCapture.js ****************');
 */
 
