@@ -149,4 +149,19 @@
          <string>NT1</string>
       </compatible-nozzle-tip-ids>
    </package>
+   <package version="1.1" id="C_0603">
+      <footprint units="Millimeters" body-width="1.6" body-height="0.8">
+         <pad name="1" x="-0.675" y="0.0" width="0.25" height="0.8" rotation="0.0" roundness="0.0"/>
+         <pad name="2" x="0.675" y="0.0" width="0.25" height="0.8" rotation="0.0" roundness="0.0"/>
+      </footprint>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="LED_WS2812B-SIDE-A">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="LED_WS2812B-MINI">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
 </openpnp-packages>
