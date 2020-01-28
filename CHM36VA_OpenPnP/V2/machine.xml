@@ -90,8 +90,8 @@
       <feeders>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="F5" name="Strip 1" enabled="true" part-id="R0603-2K2" retry-count="3" pick-retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="0">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="292.01611892325" y="237.9118689240155" z="0.0" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="288.02978505827383" y="237.9020688834557" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="294.959" y="172.002" z="0.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="290.936" y="171.998" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <tape-width value="8.0" units="Millimeters"/>
             <pipeline>
@@ -143,28 +143,28 @@
          </feeder>
       </feeders>
       <cameras>
-         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579538258033" name="Bottom Camera" looking="Up" settle-time-ms="250" rotation="0.0" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="Global Shutter Camera \\?\usb#vid_05a3&amp;pid_0144&amp;mi_00#6&amp;297482de&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" fps="10.0">
+         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579538258033" name="Bottom Camera" looking="Up" settle-time-ms="250" rotation="0.11571942967181108" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="Global Shutter Camera \\?\usb#vid_05a3&amp;pid_0144&amp;mi_00#6&amp;297482de&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" fps="10.0">
             <units-per-pixel units="Millimeters" x="0.021" y="0.021" z="0.0" rotation="0.0"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
-            <head-offsets units="Millimeters" x="165.987" y="23.235" z="0.5" rotation="43.877"/>
+            <head-offsets units="Millimeters" x="165.546" y="23.017" z="0.0" rotation="0.0"/>
             <safe-z value="0.0" units="Millimeters"/>
             <calibration enabled="false">
                <camera-matrix length="9">6.95181195069896E-310, 6.95181195056774E-310, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
                <distortion-coefficients length="5">4.9E-324, 7.63918484925E-313, 3.5604305343967845E-307, 1.6021930623879718E-306, 2.447635570273665E-307</distortion-coefficients>
             </calibration>
-            <back-light-compensation property="BackLightCompensation" value="36" auto="false"/>
-            <brightness property="Brightness" value="-1" auto="false"/>
-            <contrast property="Contrast" value="64" auto="false"/>
+            <back-light-compensation property="BackLightCompensation" value="108" auto="false"/>
+            <brightness property="Brightness" value="39" auto="false"/>
+            <contrast property="Contrast" value="84" auto="false"/>
             <exposure property="Exposure" value="-11" auto="false"/>
             <focus property="Focus"/>
             <gain property="Gain" value="142" auto="false"/>
             <gamma property="Gamma" value="126" auto="false"/>
             <hue property="Hue" value="-2000" auto="false"/>
             <power-line-frequency property="PowerLineFrequency" value="1" auto="false"/>
-            <saturation property="Saturation" value="19" auto="false"/>
+            <saturation property="Saturation" value="41" auto="false"/>
             <sharpness property="Sharpness" value="3" auto="false"/>
-            <white-balance property="WhiteBalance" value="2800" auto="false"/>
-            <zoom property="Zoom"/>
+            <white-balance property="WhiteBalance" value="3616" auto="false"/>
+            <zoom property="Zoom" value="0" auto="false"/>
          </camera>
       </cameras>
       <actuators>
@@ -214,7 +214,7 @@
                   <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="10" enabled="true" kernel-size="9"/>
                   <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="4" enabled="true" diameter="525"/>
                   <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="1" enabled="true" conversion="Bgr2HsvFull"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.MaskHsv" name="2" enabled="true" auto="false" fraction-to-mask="0.0" hue-min="60" hue-max="130" saturation-min="0" saturation-max="255" value-min="0" value-max="255" invert="false" binary-mask="false"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.MaskHsv" name="2" enabled="false" auto="false" fraction-to-mask="0.0" hue-min="60" hue-max="130" saturation-min="0" saturation-max="255" value-min="0" value-max="255" invert="false" binary-mask="false"/>
                   <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="3" enabled="true" conversion="Hsv2BgrFull"/>
                   <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="6" enabled="true" conversion="Bgr2Gray"/>
                   <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="12" enabled="true" threshold="100" auto="false" invert="false"/>
@@ -391,7 +391,7 @@
             <changer-mid-location-2 units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <changer-mid-2-to-end-speed>1.0</changer-mid-2-to-end-speed>
             <changer-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <calibration angle-subdivisions="6" allow-misdetections="0" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="false" runout-compensation-algorithm="ModelCameraOffset" version="2.0" recalibration-trigger="NozzleTipChangeInJob" offset-threshold="0.0">
+            <calibration angle-subdivisions="6" allow-misdetections="0" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" runout-compensation-algorithm="ModelCameraOffset" version="2.0" recalibration-trigger="Manual" offset-threshold="0.0">
                <pipeline>
                   <stages>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" settle-first="true" count="1"/>
@@ -408,7 +408,12 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="7" enabled="false" prefix="runoutCalibration" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap"/>
+               <runout-compensation-lookup class="java.util.HashMap">
+                  <entry>
+                     <string>N1</string>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="0.02920955562009875" center-y="0.10855111821086263" radius="0.14166621841012328" phase-shift="120.6136395439183" units="Millimeters"/>
+                  </entry>
+               </runout-compensation-lookup>
                <offset-threshold-length value="0.5" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
             </calibration>
