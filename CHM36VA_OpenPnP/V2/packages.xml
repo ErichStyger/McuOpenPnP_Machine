@@ -81,7 +81,7 @@
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="SOT-23">
-      <footprint units="Millimeters" body-width="0.0" body-height="0.0">
+      <footprint units="Millimeters" body-width="2.9" body-height="1.3">
          <pad name="1" x="-1.0" y="-1.1" width="0.8" height="0.8" rotation="0.0" roundness="0.0"/>
          <pad name="2" x="1.0" y="-1.1" width="0.8" height="0.8" rotation="0.0" roundness="0.0"/>
          <pad name="3" x="0.0" y="1.1" width="0.8" height="0.8" rotation="0.0" roundness="0.0"/>
@@ -161,6 +161,66 @@
       <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
    </package>
    <package version="1.1" id="LED_WS2812B-MINI">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="CP_Elec_5x5.3">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="C_1206">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="LED_0603">
+      <footprint units="Millimeters" body-width="1.6" body-height="0.8">
+         <pad name="1" x="-0.675" y="0.0" width="0.25" height="0.8" rotation="0.0" roundness="0.0"/>
+         <pad name="2" x="0.675" y="0.0" width="0.25" height="0.8" rotation="0.0" roundness="0.0"/>
+      </footprint>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="R_0603">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="SW_SPST_KMR2_Small">
+      <footprint units="Millimeters" body-width="5.0" body-height="2.6">
+         <pad name="1" x="-1.6" y="0.3" width="0.9" height="0.9" rotation="0.0" roundness="0.0"/>
+         <pad name="2" x="-1.6" y="-0.3" width="0.9" height="0.9" rotation="0.0" roundness="0.0"/>
+         <pad name="3" x="1.6" y="0.3" width="0.9" height="0.9" rotation="0.0" roundness="0.0"/>
+         <pad name="4" x="1.6" y="-0.3" width="0.9" height="0.9" rotation="0.0" roundness="0.0"/>
+      </footprint>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="SOP-28_X12.017">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="SOIC-8_3.9x4.9mm_Pitch1.27mm">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="LQFP-48_7x7mm_Pitch0.5mm">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="Pin_Header_Straight_2x05_Pitch1.27mm_SMD">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="SOT-23_2T">
+      <footprint units="Millimeters" body-width="2.9" body-height="1.3">
+         <pad name="1" x="-1.0" y="-1.1" width="0.8" height="0.8" rotation="0.0" roundness="0.0"/>
+         <pad name="2" x="1.0" y="-1.1" width="0.8" height="0.8" rotation="0.0" roundness="0.0"/>
+         <pad name="3" x="0.0" y="1.1" width="0.8" height="0.8" rotation="0.0" roundness="0.0"/>
+      </footprint>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="Fiducial_1mm_Dia_2.54mm_Outer_CopperTop">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="SWD_Pin_Header_Straight_2x05_Pitch1.27mm_SMD">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
       <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
    </package>
