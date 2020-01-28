@@ -1,5 +1,5 @@
 <openpnp-machine>
-   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="0.52">
+   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="0.49">
       <heads>
          <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1">
             <nozzles>
@@ -7,15 +7,15 @@
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>NT1</string>
                   </compatible-nozzle-tip-ids>
-                  <head-offsets units="Millimeters" x="34.0" y="-18.029" z="-8.5" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="33.56" y="-18.19" z="-8.5" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                   <vacuum-actuator-name>N1VSENSE</vacuum-actuator-name>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="NOZ1579800191984" name="N2" pick-dwell-milliseconds="100" place-dwell-milliseconds="100" current-nozzle-tip-id="TIP1579800676936" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="NOZ1579800191984" name="N2" pick-dwell-milliseconds="1000" place-dwell-milliseconds="1000" current-nozzle-tip-id="TIP1579800676936" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>TIP1579800676936</string>
                   </compatible-nozzle-tip-ids>
-                  <head-offsets units="Millimeters" x="56.189" y="-16.892" z="-8.5" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="56.73" y="-18.01" z="-8.5" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                   <vacuum-actuator-name>N2VSENSE</vacuum-actuator-name>
                </nozzle>
@@ -46,7 +46,7 @@
                   <safe-z value="0.0" units="Millimeters"/>
                </actuator>
                <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1579799796417" name="DRAGPIN" index="0">
-                  <head-offsets units="Millimeters" x="45.42" y="19.79" z="0.0" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="44.57" y="19.33" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </actuator>
                <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1579879539027" name="VAC" index="0">
