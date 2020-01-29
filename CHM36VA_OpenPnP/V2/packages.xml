@@ -108,13 +108,13 @@
       <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
    </package>
    <package version="1.1" id="FIDUCIAL_Round_1mm" description="Round Fiducial 1 mm diameter">
-      <footprint units="Millimeters" body-width="0.0" body-height="0.0">
+      <footprint units="Millimeters" body-width="1.0" body-height="1.0">
          <pad name="1" x="0.0" y="0.0" width="1.0" height="1.0" rotation="0.0" roundness="100.0"/>
       </footprint>
       <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
    </package>
    <package version="1.1" id="FIDUCIAL_Round_2mm" description="Round Fiducial 2 mm diameter">
-      <footprint units="Millimeters" body-width="0.0" body-height="0.0">
+      <footprint units="Millimeters" body-width="2.0" body-height="2.0">
          <pad name="1" x="0.0" y="0.0" width="2.0" height="2.0" rotation="0.0" roundness="100.0"/>
       </footprint>
       <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
@@ -217,7 +217,9 @@
       <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
    </package>
    <package version="1.1" id="Fiducial_1mm_Dia_2.54mm_Outer_CopperTop">
-      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0">
+         <pad name="1" x="0.0" y="0.0" width="1.0" height="1.0" rotation="0.0" roundness="100.0"/>
+      </footprint>
       <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
    </package>
    <package version="1.1" id="SWD_Pin_Header_Straight_2x05_Pitch1.27mm_SMD">
