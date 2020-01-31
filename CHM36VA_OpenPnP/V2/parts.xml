@@ -1,6 +1,6 @@
 <openpnp-parts>
    <part id="FIDUCIAL-1X2-FIDUCIAL1X2" height-units="Millimeters" height="0.0" package-id="FIDUCIAL-1X2" speed="1.0"/>
-   <part id="R_0805-1k" height-units="Millimeters" height="1.0" package-id="R0805" speed="1.0"/>
+   <part id="R_0805-1k" height-units="Millimeters" height="0.5" package-id="R0805" speed="1.0"/>
    <part id="R_0201-1k" height-units="Millimeters" height="0.25" package-id="R0201" speed="1.0"/>
    <part id="R_0402-1k" height-units="Millimeters" height="0.5" package-id="R0402" speed="1.0"/>
    <part id="R_0603-1k" height-units="Millimeters" height="0.5" package-id="R0603" speed="1.0"/>
@@ -14,7 +14,7 @@
    <part id="LED_WS2812B-SIDE-A-WS2812B-SIDE-A" height-units="Millimeters" height="2.0" package-id="LED_WS2812B-SIDE-A" speed="1.0"/>
    <part id="LED_WS2812B-MINI-WS2812B" height-units="Millimeters" height="2.0" package-id="LED_WS2812B-MINI" speed="1.0"/>
    <part id="CP_Elec_5x5.3-22uF/16V" height-units="Millimeters" height="0.0" package-id="CP_Elec_5x5.3" speed="1.0"/>
-   <part id="C_0603-1uF" height-units="Millimeters" height="0.5" package-id="C_0603" speed="1.0"/>
+   <part id="C_0603-1uF" height-units="Millimeters" height="1.0" package-id="C_0603" speed="1.0"/>
    <part id="C_1206-10uF/16V" height-units="Millimeters" height="0.0" package-id="C_1206" speed="1.0"/>
    <part id="C_0603-105pF" height-units="Millimeters" height="0.0" package-id="C_0603" speed="1.0"/>
    <part id="C_0603-0.1uF" height-units="Millimeters" height="0.5" package-id="C_0603" speed="1.0"/>
@@ -25,8 +25,7 @@
    <part id="SOIC-8_3.9x4.9mm_Pitch1.27mm-SN65HVD72" height-units="Millimeters" height="0.0" package-id="SOIC-8_3.9x4.9mm_Pitch1.27mm" speed="1.0"/>
    <part id="SOT-23-XC6206-3.3V" height-units="Millimeters" height="0.0" package-id="SOT-23" speed="1.0"/>
    <part id="LQFP-48_7x7mm_Pitch0.5mm-LPC845M301JBD48E" height-units="Millimeters" height="0.0" package-id="LQFP-48_7x7mm_Pitch0.5mm" speed="1.0"/>
-   <part id="Pin_Header_Straight_2x05_Pitch1.27mm_SMD-SWD_JTAG_10pin" height-units="Millimeters" height="0.0" package-id="Pin_Header_Straight_2x05_Pitch1.27mm_SMD" speed="1.0"/>
    <part id="SOT-23_2T-AH3572" height-units="Millimeters" height="1.025" package-id="SOT-23" speed="1.0"/>
    <part id="Fiducial_1mm_Dia_2.54mm_Outer_CopperTop-Fiducial" height-units="Millimeters" height="0.0" package-id="Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" speed="1.0"/>
-   <part id="SWD_Pin_Header_Straight_2x05_Pitch1.27mm_SMD-SWD_JTAG_10pin" height-units="Millimeters" height="0.0" package-id="SWD_Pin_Header_Straight_2x05_Pitch1.27mm_SMD" speed="1.0"/>
+   <part id="SWD_Pin_Header_Straight_2x05_Pitch1.27mm_SMD-SWD_JTAG_10pin" height-units="Millimeters" height="5.0" package-id="SWD_Pin_Header_Straight_2x05_Pitch1.27mm_SMD" speed="1.0"/>
 </openpnp-parts>
