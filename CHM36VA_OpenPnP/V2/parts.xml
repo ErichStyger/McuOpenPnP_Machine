@@ -28,4 +28,15 @@
    <part id="SOT-23_2T-AH3572" height-units="Millimeters" height="1.025" package-id="SOT-23" speed="1.0"/>
    <part id="Fiducial_1mm_Dia_2.54mm_Outer_CopperTop-Fiducial" height-units="Millimeters" height="0.0" package-id="Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" speed="1.0"/>
    <part id="SWD_Pin_Header_Straight_2x05_Pitch1.27mm_SMD-SWD_JTAG_10pin" height-units="Millimeters" height="5.0" package-id="SWD_Pin_Header_Straight_2x05_Pitch1.27mm_SMD" speed="1.0"/>
+   <part id="C_0603_1608Metric-100nF" height-units="Millimeters" height="0.0" package-id="C_0603_1608Metric" speed="1.0"/>
+   <part id="D_0603-LED_Red" height-units="Millimeters" height="0.0" package-id="D_0603" speed="1.0"/>
+   <part id="D_0603-LED_Yellow" height-units="Millimeters" height="0.0" package-id="D_0603" speed="1.0"/>
+   <part id="D_0603-LED_Green" height-units="Millimeters" height="0.0" package-id="D_0603" speed="1.0"/>
+   <part id="D_0603-LED_Blue" height-units="Millimeters" height="0.0" package-id="D_0603" speed="1.0"/>
+   <part id="D_0603-D" height-units="Millimeters" height="0.0" package-id="D_0603" speed="1.0"/>
+   <part id="D_0603-D11" height-units="Millimeters" height="0.0" package-id="D_0603" speed="1.0"/>
+   <part id="D_SOT-23_ANK-PMEG2005CT" height-units="Millimeters" height="0.0" package-id="D_SOT-23_ANK" speed="1.0"/>
+   <part id="SOT-23-PMV55ENEAR" height-units="Millimeters" height="0.0" package-id="SOT-23" speed="1.0"/>
+   <part id="SOT-23-BSS138" height-units="Millimeters" height="0.0" package-id="SOT-23" speed="1.0"/>
+   <part id="SHT30-SHT30" height-units="Millimeters" height="0.0" package-id="SHT30" speed="1.0"/>
 </openpnp-parts>

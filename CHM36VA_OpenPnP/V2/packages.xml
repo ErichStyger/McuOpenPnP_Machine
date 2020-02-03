@@ -242,4 +242,20 @@
          <string>NT1</string>
       </compatible-nozzle-tip-ids>
    </package>
+   <package version="1.1" id="C_0603_1608Metric">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="D_0603">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="D_SOT-23_ANK">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="SHT30">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
 </openpnp-packages>
