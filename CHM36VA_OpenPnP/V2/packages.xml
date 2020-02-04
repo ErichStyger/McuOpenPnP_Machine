@@ -178,7 +178,9 @@
    </package>
    <package version="1.1" id="C_1206">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
-      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>NT1</string>
+      </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="R_0603">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
@@ -199,7 +201,9 @@
    </package>
    <package version="1.1" id="SOP-28_X12.017">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
-      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>NT1</string>
+      </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="SOIC-8_3.9x4.9mm_Pitch1.27mm">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
@@ -209,7 +213,9 @@
    </package>
    <package version="1.1" id="LQFP-48_7x7mm_Pitch0.5mm">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
-      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>NT1</string>
+      </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="SOT-23_2T">
       <footprint units="Millimeters" body-width="2.9" body-height="1.3">
@@ -235,11 +241,15 @@
    </package>
    <package version="1.1" id="D_0603">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
-      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>NT1</string>
+      </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="D_SOT-23_ANK">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
-      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>NT1</string>
+      </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="SHT30">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
