@@ -473,7 +473,7 @@
                </stages>
             </pipeline>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" id="FDR1580800201740" name="Green24mmStripFeeder" enabled="true" part-id="SWD_Pin_Header_Straight_2x05_Pitch1.27mm_SMD-SWD_JTAG_10pin" retry-count="3" pick-retry-count="3" tray-count-x="2" tray-count-y="1" feed-count="1">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" id="FDR1580800201740" name="Green24mmStripFeeder" enabled="false" part-id="SWD_Pin_Header_Straight_2x05_Pitch1.27mm_SMD-SWD_JTAG_10pin" retry-count="3" pick-retry-count="3" tray-count-x="2" tray-count-y="1" feed-count="1">
             <location units="Millimeters" x="280.884" y="331.088" z="-8.0" rotation="0.0"/>
             <offsets units="Millimeters" x="-12.0" y="0.0" z="0.0" rotation="0.0"/>
          </feeder>
@@ -604,7 +604,7 @@
                </entry>
                <entry>
                   <string>SOP-28_X12.017-MS_X12.017</string>
-                  <part-settings enabled="true" pre-rotate-usage="AlwaysOff">
+                  <part-settings enabled="false" pre-rotate-usage="AlwaysOff">
                      <pipeline>
                         <stages>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" settle-first="true" count="1"/>
