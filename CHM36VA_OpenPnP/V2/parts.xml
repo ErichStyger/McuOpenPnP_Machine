@@ -39,4 +39,10 @@
    <part id="SOT-23_2T-AH3572_225" height-units="Millimeters" height="0.0" package-id="SOT-23_2T" speed="1.0"/>
    <part id="SOT-23_2T-AH3572_315" height-units="Millimeters" height="0.0" package-id="SOT-23_2T" speed="1.0"/>
    <part id="SOT-23_2T-AH3572_135" height-units="Millimeters" height="0.0" package-id="SOT-23_2T" speed="1.0"/>
+   <part id="D_0603-CDBURT0530LL-HF" height-units="Millimeters" height="0.5" package-id="D_0603" speed="1.0"/>
+   <part id="R_0805-330" height-units="Millimeters" height="0.5" package-id="R0805" speed="1.0"/>
+   <part id="R_0805-10k" height-units="Millimeters" height="0.5" package-id="R0805" speed="1.0"/>
+   <part id="D_0805-LED_Red" height-units="Millimeters" height="0.5" package-id="R0805" speed="1.0"/>
+   <part id="D_0805-LED_Green" height-units="Millimeters" height="0.5" package-id="R0805" speed="1.0"/>
+   <part id="C_0805-100nF" height-units="Millimeters" height="0.5" package-id="R0805" speed="1.0"/>
 </openpnp-parts>
