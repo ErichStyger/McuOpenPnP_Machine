@@ -1,5 +1,5 @@
 <openpnp-machine>
-   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="0.27">
+   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="0.75">
       <heads>
          <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1">
             <nozzles>
@@ -55,7 +55,7 @@
                </actuator>
             </actuators>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579800540239" name="Top Camera" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="ATM Camera PIL  \\?\usb#vid_2c86&amp;pid_0206&amp;mi_00#7&amp;35556615&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="13" fps="10.0">
+               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579800540239" name="Top Camera" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="ATM Camera PIL  \\?\usb#vid_2c86&amp;pid_0206&amp;mi_00#6&amp;112a52f4&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" fps="10.0">
                   <units-per-pixel units="Millimeters" x="0.0162" y="0.0162" z="0.0" rotation="0.0"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -82,7 +82,7 @@
             <park-location units="Millimeters" x="300.0" y="350.0" z="0.0" rotation="0.0"/>
             <soft-limits-enabled>true</soft-limits-enabled>
             <min-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <max-location units="Millimeters" x="400.0" y="380.0" z="0.0" rotation="0.0"/>
+            <max-location units="Millimeters" x="400.0" y="450.0" z="0.0" rotation="0.0"/>
             <pump-actuator-name>VAC</pump-actuator-name>
          </head>
       </heads>
@@ -413,9 +413,9 @@
             <backoff-distance value="0.2" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1581344748747" name="FD26" enabled="true" part-id="LED_WS2812B-SIDE-A-WS2812B-SIDE-A" retry-count="3" pick-retry-count="3" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
-            <location units="Millimeters" x="58.154" y="373.924" z="-9.0" rotation="-90.0"/>
-            <feed-start-location units="Millimeters" x="68.354" y="379.224" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="72.354" y="379.224" z="0.0" rotation="0.0"/>
+            <location units="Millimeters" x="58.854" y="373.924" z="-9.0" rotation="90.0"/>
+            <feed-start-location units="Millimeters" x="68.554" y="379.124" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="72.554" y="379.124" z="0.0" rotation="0.0"/>
             <feed-speed>0.1</feed-speed>
             <vision enabled="false" template-image-name="tmpl_2714184057134874055.png">
                <area-of-interest x="510" y="194" width="230" height="303"/>
