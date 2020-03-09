@@ -7,6 +7,7 @@
 
 #include "CLS1.h"
 #include "UTIL1.h"
+#include "FRTOS1.h"
 #include "Feeder.h"
 #include "AS2.h" /* UART to feeder */
 

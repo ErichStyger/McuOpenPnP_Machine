@@ -93,9 +93,6 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.2101080381.200606906" name="application.c" rcbsApplicability="disable" resourcePath="Sources/application.c" toolsToInvoke="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.2031330264.942276695">
-						<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.2031330264.942276695" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.2031330264"/>
-					</fileInfo>
 					<sourceEntries>
 						<entry excluding=".settings/com.freescale.processorexpert.core.prefs" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
