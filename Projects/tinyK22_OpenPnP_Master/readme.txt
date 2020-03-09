@@ -6,3 +6,10 @@ This project implements a sub driver for an OpenPnP (www.openpnp.org) pick and p
 USB, RTT and UART (over USB with AS1) are used to communicate with the host.
 AS2 is used as UART connection to the OpenPnP feeders.
 
+Links:
+https://mcuoneclipse.com/2018/05/05/sneak-preview-diy-smt-pick-place-machine-with-openpnp/
+https://mcuoneclipse.com/2018/06/26/building-a-diy-smt-pickplace-machine-with-openpnp/
+https://mcuoneclipse.com/2018/06/03/embedded-computing-conference-2018-pickplace-overview-video/
+https://mcuoneclipse.com/2018/03/18/3d-printed-smt-cut-tape-holder/
+https://mcuoneclipse.com/2019/11/26/openpnp-solder-paste-dispensing-video/
+https://mcuoneclipse.com/2019/08/15/openpnp-solder-dispenser-sneak-preview/
