@@ -7,7 +7,7 @@
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>NT1</string>
                   </compatible-nozzle-tip-ids>
-                  <head-offsets units="Millimeters" x="33.56" y="-18.19" z="-8.5" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="33.544" y="-18.1" z="-8.5" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                   <vacuum-actuator-name>N1VSENSE</vacuum-actuator-name>
                </nozzle>
@@ -495,10 +495,10 @@
          </feeder>
       </feeders>
       <cameras>
-         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579538258033" name="Bottom Camera" looking="Up" settle-time-ms="250" rotation="0.4096443775535253" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="Global Shutter Camera \\?\usb#vid_05a3&amp;pid_0144&amp;mi_00#6&amp;297482de&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" fps="10.001">
+         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579538258033" name="Bottom Camera" looking="Up" settle-time-ms="250" rotation="0.4096443775535253" flip-x="true" flip-y="false" offset-x="0" offset-y="-25" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="Global Shutter Camera \\?\usb#vid_05a3&amp;pid_0144&amp;mi_00#6&amp;297482de&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" fps="10.0">
             <units-per-pixel units="Millimeters" x="0.021" y="0.021" z="0.0" rotation="0.0"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
-            <head-offsets units="Millimeters" x="165.41880678484145" y="23.08485130992998" z="0.0" rotation="0.0"/>
+            <head-offsets units="Millimeters" x="165.6" y="23.6" z="0.0" rotation="0.0"/>
             <safe-z value="0.0" units="Millimeters"/>
             <calibration enabled="false">
                <camera-matrix length="9">6.95181195069896E-310, 6.95181195056774E-310, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
@@ -2592,12 +2592,7 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="7" enabled="false" prefix="runoutCalibration" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap">
-                  <entry>
-                     <string>N1</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.09008188464780953" center-y="0.1634570917759237" radius="0.07152435844330172" phase-shift="86.17210267771065" units="Millimeters"/>
-                  </entry>
-               </runout-compensation-lookup>
+               <runout-compensation-lookup class="java.util.HashMap"/>
                <offset-threshold-length value="0.5" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
             </calibration>
@@ -2632,12 +2627,7 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="7" enabled="false" prefix="runoutCalibration" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap">
-                  <entry>
-                     <string>N2</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.00298460631468623" center-y="-0.010476614699331855" radius="0.07153317219738879" phase-shift="-135.6773420215076" units="Millimeters"/>
-                  </entry>
-               </runout-compensation-lookup>
+               <runout-compensation-lookup class="java.util.HashMap"/>
                <offset-threshold-length value="0.5" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
             </calibration>
