@@ -3,13 +3,15 @@
       <heads>
          <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1">
             <nozzles>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="N1" name="N1" pick-dwell-milliseconds="500" place-dwell-milliseconds="500" current-nozzle-tip-id="NT1" changer-enabled="false" limit-rotation="true">
-                  <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="N1" name="N1" pick-dwell-milliseconds="250" place-dwell-milliseconds="250" current-nozzle-tip-id="NT1" changer-enabled="false" limit-rotation="true">
+                  <compatible-nozzle-tip-ids class="java.util.ArrayList">
+                     <string>NT1</string>
+                  </compatible-nozzle-tip-ids>
                   <head-offsets units="Millimeters" x="33.56" y="-18.19" z="-8.5" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                   <vacuum-actuator-name>N1VSENSE</vacuum-actuator-name>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="N2" name="N2" pick-dwell-milliseconds="500" place-dwell-milliseconds="500" current-nozzle-tip-id="TIP1579800676936" changer-enabled="false" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="N2" name="N2" pick-dwell-milliseconds="250" place-dwell-milliseconds="250" current-nozzle-tip-id="TIP1579800676936" changer-enabled="false" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
                   <head-offsets units="Millimeters" x="56.73" y="-18.01" z="-8.5" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
@@ -51,7 +53,7 @@
                </actuator>
             </actuators>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579800540239" name="Top Camera" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="ATM Camera PIL  \\?\usb#vid_2c86&amp;pid_0206&amp;mi_00#6&amp;2ca24193&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" fps="10.0">
+               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579800540239" name="Top Camera" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="ATM Camera PIL  \\?\usb#vid_2c86&amp;pid_0206&amp;mi_00#7&amp;35556615&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" fps="10.0">
                   <units-per-pixel units="Millimeters" x="0.0162" y="0.0162" z="0.0" rotation="0.0"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -110,7 +112,7 @@
             <location units="Millimeters" x="57.4" y="34.967" z="-8.5" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="67.404" y="38.567" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.404" y="38.567" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false" template-image-name="tmpl_6362177649813644208.png">
                <area-of-interest x="485" y="253" width="297" height="203"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -119,10 +121,10 @@
             <backoff-distance value="0.2" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1580226376125" name="FD02" enabled="true" part-id="R_0603-10k" retry-count="3" pick-retry-count="3" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
-            <location units="Millimeters" x="57.449" y="48.047" z="-8.5" rotation="90.0"/>
+            <location units="Millimeters" x="57.1" y="48.047" z="-8.5" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="67.363" y="51.42" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.363" y="51.42" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false" template-image-name="tmpl_3403469561651904993.png">
                <area-of-interest x="495" y="248" width="282" height="200"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -134,7 +136,7 @@
             <location units="Millimeters" x="57.772" y="61.085" z="-8.5" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="67.715" y="64.609" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.715" y="64.609" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false" template-image-name="tmpl_4055138274245503744.png">
                <area-of-interest x="476" y="249" width="307" height="224"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -146,7 +148,7 @@
             <location units="Millimeters" x="57.563" y="74.02" z="-8.5" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="67.465" y="77.501" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.465" y="77.501" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false">
                <area-of-interest x="0" y="0" width="0" height="0"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -158,7 +160,7 @@
             <location units="Millimeters" x="57.863" y="87.02" z="-8.5" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="67.785" y="90.539" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.785" y="90.539" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false">
                <area-of-interest x="0" y="0" width="0" height="0"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -167,10 +169,10 @@
             <backoff-distance value="0.2" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1580228061341" name="FD06" enabled="true" part-id="C_0603-100nF" retry-count="3" pick-retry-count="3" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
-            <location units="Millimeters" x="57.81" y="99.937" z="-8.5" rotation="90.0"/>
+            <location units="Millimeters" x="57.81" y="99.937" z="-9.0" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="67.765" y="103.47" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.765" y="103.47" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false">
                <area-of-interest x="0" y="0" width="0" height="0"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -182,7 +184,7 @@
             <location units="Millimeters" x="57.61" y="112.937" z="-8.5" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="67.51" y="116.42" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.51" y="116.42" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false" template-image-name="tmpl_8686151767936110991.png">
                <area-of-interest x="481" y="240" width="325" height="229"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -194,7 +196,7 @@
             <location units="Millimeters" x="57.719" y="164.815" z="-8.5" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="67.933" y="168.412" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.933" y="168.412" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false" template-image-name="tmpl_7061659952518420808.png">
                <area-of-interest x="488" y="212" width="329" height="275"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -206,7 +208,7 @@
             <location units="Millimeters" x="58.32" y="217.037" z="-8.5" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="68.445" y="220.389" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="72.445" y="220.389" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false" template-image-name="tmpl_6592552516515829194.png">
                <area-of-interest x="491" y="224" width="284" height="252"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -218,7 +220,7 @@
             <location units="Millimeters" x="57.812" y="177.89" z="-8.5" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="67.792" y="181.39" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.792" y="181.39" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false" template-image-name="tmpl_6606558538364953398.png">
                <area-of-interest x="514" y="235" width="310" height="222"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -230,7 +232,7 @@
             <location units="Millimeters" x="57.91" y="126.137" z="-9.0" rotation="-90.0"/>
             <feed-start-location units="Millimeters" x="67.91" y="129.537" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.91" y="129.537" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false">
                <area-of-interest x="0" y="0" width="0" height="0"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -242,7 +244,7 @@
             <location units="Millimeters" x="57.91" y="139.137" z="-9.0" rotation="-90.0"/>
             <feed-start-location units="Millimeters" x="67.81" y="142.437" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.81" y="142.437" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false">
                <area-of-interest x="0" y="0" width="0" height="0"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -254,7 +256,7 @@
             <location units="Millimeters" x="57.753" y="151.918" z="-9.0" rotation="-90.0"/>
             <feed-start-location units="Millimeters" x="67.71" y="155.437" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.71" y="155.437" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false">
                <area-of-interest x="0" y="0" width="0" height="0"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -266,7 +268,7 @@
             <location units="Millimeters" x="57.949" y="191.049" z="-9.0" rotation="-90.0"/>
             <feed-start-location units="Millimeters" x="67.916" y="194.359" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.916" y="194.359" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false" template-image-name="tmpl_7166746236493046888.png">
                <area-of-interest x="529" y="227" width="302" height="266"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -278,7 +280,7 @@
             <location units="Millimeters" x="58.049" y="203.941" z="-9.0" rotation="-90.0"/>
             <feed-start-location units="Millimeters" x="67.926" y="207.39" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.926" y="207.39" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false" template-image-name="tmpl_5340067836088149741.png">
                <area-of-interest x="500" y="245" width="288" height="226"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -290,7 +292,7 @@
             <location units="Millimeters" x="58.951" y="322.814" z="-9.0" rotation="-90.0"/>
             <feed-start-location units="Millimeters" x="68.943" y="328.3" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="72.943" y="328.3" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false" template-image-name="tmpl_8939954195139066823.png">
                <area-of-interest x="493" y="168" width="470" height="394"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -302,7 +304,7 @@
             <location units="Millimeters" x="58.954" y="339.924" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="68.961" y="345.286" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="76.961" y="345.286" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false" template-image-name="tmpl_1541465627345728680.png">
                <area-of-interest x="390" y="137" width="493" height="471"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -400,7 +402,7 @@
             <location units="Millimeters" x="58.954" y="356.924" z="-9.0" rotation="-90.0"/>
             <feed-start-location units="Millimeters" x="68.754" y="362.324" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="76.754" y="362.324" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false" template-image-name="tmpl_781869377021545644.png">
                <area-of-interest x="453" y="142" width="342" height="433"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -409,10 +411,10 @@
             <backoff-distance value="0.2" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1581344748747" name="FD26" enabled="true" part-id="LED_WS2812B-SIDE-A-WS2812B-SIDE-A" retry-count="3" pick-retry-count="3" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
-            <location units="Millimeters" x="58.854" y="373.924" z="-9.0" rotation="90.0"/>
+            <location units="Millimeters" x="58.654" y="373.924" z="-9.0" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="68.554" y="379.124" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="72.554" y="379.124" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false" template-image-name="tmpl_2714184057134874055.png">
                <area-of-interest x="510" y="194" width="230" height="303"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -424,7 +426,7 @@
             <location units="Millimeters" x="58.02" y="268.837" z="-8.5" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="68.02" y="272.237" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="72.02" y="272.237" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false" template-image-name="tmpl_7488043834517537452.png">
                <area-of-interest x="506" y="234" width="268" height="244"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -433,10 +435,10 @@
             <backoff-distance value="0.2" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1581347618308" name="FD16" enabled="true" part-id="SOT-23-BSS138" retry-count="3" pick-retry-count="3" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
-            <location units="Millimeters" x="58.23" y="229.868" z="-9.0" rotation="90.0"/>
+            <location units="Millimeters" x="58.0" y="229.768" z="-9.0" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="68.12" y="233.237" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="72.12" y="233.237" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false" template-image-name="tmpl_3286097203758662613.png">
                <area-of-interest x="484" y="242" width="296" height="249"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -467,8 +469,8 @@
                </stages>
             </pipeline>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1581523473750" name="FD20" enabled="false" part-id="D_SOT-23_ANK-PMEG2005CT" retry-count="3" pick-retry-count="3" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
-            <location units="Millimeters" x="58.42" y="281.837" z="-8.5" rotation="90.0"/>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1581523473750" name="FD20" enabled="true" part-id="D_SOT-23_ANK-PMEG2005CT" retry-count="3" pick-retry-count="3" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
+            <location units="Millimeters" x="58.52" y="281.737" z="-8.5" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="68.42" y="285.137" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="72.42" y="285.137" z="0.0" rotation="0.0"/>
             <feed-speed>0.05</feed-speed>
@@ -483,7 +485,7 @@
             <location units="Millimeters" x="58.42" y="294.837" z="-8.5" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="68.442" y="298.101" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="72.442" y="298.101" z="0.0" rotation="0.0"/>
-            <feed-speed>0.1</feed-speed>
+            <feed-speed>0.05</feed-speed>
             <vision enabled="false">
                <area-of-interest x="0" y="0" width="0" height="0"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -493,17 +495,17 @@
          </feeder>
       </feeders>
       <cameras>
-         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579538258033" name="Bottom Camera" looking="Up" settle-time-ms="250" rotation="0.11571942967181108" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="Global Shutter Camera \\?\usb#vid_05a3&amp;pid_0144&amp;mi_00#6&amp;297482de&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" fps="10.0">
+         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579538258033" name="Bottom Camera" looking="Up" settle-time-ms="250" rotation="0.4096443775535253" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="Global Shutter Camera \\?\usb#vid_05a3&amp;pid_0144&amp;mi_00#6&amp;297482de&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" fps="10.001">
             <units-per-pixel units="Millimeters" x="0.021" y="0.021" z="0.0" rotation="0.0"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
-            <head-offsets units="Millimeters" x="165.546" y="23.017" z="0.0" rotation="0.0"/>
+            <head-offsets units="Millimeters" x="165.41880678484145" y="23.08485130992998" z="0.0" rotation="0.0"/>
             <safe-z value="0.0" units="Millimeters"/>
             <calibration enabled="false">
                <camera-matrix length="9">6.95181195069896E-310, 6.95181195056774E-310, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
                <distortion-coefficients length="5">4.9E-324, 7.63918484925E-313, 3.5604305343967845E-307, 1.6021930623879718E-306, 2.447635570273665E-307</distortion-coefficients>
             </calibration>
             <back-light-compensation property="BackLightCompensation" value="28" auto="false"/>
-            <brightness property="Brightness" value="50" auto="false"/>
+            <brightness property="Brightness" value="16" auto="false"/>
             <contrast property="Contrast" value="68" auto="false"/>
             <exposure property="Exposure" value="-10" auto="false"/>
             <focus property="Focus"/>
@@ -1515,7 +1517,7 @@
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" settle-first="true" count="1"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="13" enabled="true" prefix="bv_source_" suffix=".png"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="10" enabled="true" kernel-size="9"/>
-                           <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="4" enabled="true" diameter="525"/>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="4" enabled="true" diameter="125"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="1" enabled="true" conversion="Bgr2HsvFull"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.MaskHsv" name="2" enabled="false" auto="false" fraction-to-mask="0.0" hue-min="60" hue-max="130" saturation-min="0" saturation-max="255" value-min="0" value-max="255" invert="false" binary-mask="false"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="3" enabled="true" conversion="Hsv2BgrFull"/>
@@ -2565,7 +2567,7 @@
          </entry>
       </properties>
       <nozzle-tips>
-         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT1" name="NT1" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" is-push-and-drag-allowed="false">
+         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT1" name="NT1" pick-dwell-milliseconds="350" place-dwell-milliseconds="350" is-push-and-drag-allowed="false">
             <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
             <changer-mid-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -2573,15 +2575,15 @@
             <changer-mid-location-2 units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <changer-mid-2-to-end-speed>1.0</changer-mid-2-to-end-speed>
             <changer-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <calibration angle-subdivisions="6" allow-misdetections="0" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" runout-compensation-algorithm="ModelCameraOffset" version="2.0" recalibration-trigger="Manual" offset-threshold="0.0">
+            <calibration angle-subdivisions="6" allow-misdetections="0" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="false" runout-compensation-algorithm="ModelCameraOffset" version="2.0" recalibration-trigger="Manual" offset-threshold="0.0">
                <pipeline>
                   <stages>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" settle-first="true" count="1"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="1" enabled="true" diameter="250"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="1" enabled="true" diameter="100"/>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="2" enabled="true" conversion="Bgr2Gray"/>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="3" enabled="true" threshold="15" auto="false" invert="false"/>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="4" enabled="true" kernel-size="5"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCirclesHough" name="results" enabled="true" min-distance="50" min-diameter="40" max-diameter="50" dp="1.0" param-1="120.0" param-2="5.0"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCirclesHough" name="results" enabled="true" min-distance="50" min-diameter="50" max-diameter="80" dp="1.0" param-1="120.0" param-2="5.0"/>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="5" enabled="true" image-stage-name="0"/>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="6" enabled="true" circles-stage-name="results" thickness="2">
                         <color r="255" g="0" b="51" a="255"/>
@@ -2590,54 +2592,64 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="7" enabled="false" prefix="runoutCalibration" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap"/>
-               <offset-threshold-length value="0.5" units="Millimeters"/>
-               <calibration-Z-offset value="0.0" units="Millimeters"/>
-            </calibration>
-            <vacuum-level-part-on-low>135.0</vacuum-level-part-on-low>
-            <vacuum-level-part-on-high>250.0</vacuum-level-part-on-high>
-            <vacuum-level-part-off-low>100.0</vacuum-level-part-off-low>
-            <vacuum-level-part-off-high>134.99</vacuum-level-part-off-high>
-            <diameter-low value="0.0" units="Millimeters"/>
-         </nozzle-tip>
-         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1579800676936" name="NT2" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" is-push-and-drag-allowed="false">
-            <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
-            <changer-mid-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <changer-mid-to-mid-2-speed>1.0</changer-mid-to-mid-2-speed>
-            <changer-mid-location-2 units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <changer-mid-2-to-end-speed>1.0</changer-mid-2-to-end-speed>
-            <changer-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <calibration angle-subdivisions="6" allow-misdetections="0" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="false" runout-compensation-algorithm="ModelCameraOffset" version="2.0" recalibration-trigger="NozzleTipChangeInJob" offset-threshold="0.0">
-               <pipeline>
-                  <stages>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" settle-first="true" count="1"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="1" enabled="true" diameter="250"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="2" enabled="true" conversion="Bgr2Gray"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="3" enabled="true" threshold="15" auto="false" invert="false"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="4" enabled="true" kernel-size="5"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCirclesHough" name="results" enabled="true" min-distance="50" min-diameter="40" max-diameter="50" dp="1.0" param-1="120.0" param-2="5.0"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="5" enabled="true" image-stage-name="0"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="6" enabled="true" circles-stage-name="results" thickness="2">
-                        <color r="255" g="0" b="51" a="255"/>
-                        <center-color r="0" g="204" b="255" a="255"/>
-                     </cv-stage>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="7" enabled="false" prefix="runoutCalibration" suffix=".png"/>
-                  </stages>
-               </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap"/>
+               <runout-compensation-lookup class="java.util.HashMap">
+                  <entry>
+                     <string>N1</string>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.09008188464780953" center-y="0.1634570917759237" radius="0.07152435844330172" phase-shift="86.17210267771065" units="Millimeters"/>
+                  </entry>
+               </runout-compensation-lookup>
                <offset-threshold-length value="0.5" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
             </calibration>
             <vacuum-level-part-on-low>130.0</vacuum-level-part-on-low>
             <vacuum-level-part-on-high>250.0</vacuum-level-part-on-high>
             <vacuum-level-part-off-low>100.0</vacuum-level-part-off-low>
-            <vacuum-level-part-off-high>129.0</vacuum-level-part-off-high>
+            <vacuum-level-part-off-high>129.999</vacuum-level-part-off-high>
+            <diameter-low value="0.0" units="Millimeters"/>
+         </nozzle-tip>
+         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1579800676936" name="NT2" pick-dwell-milliseconds="350" place-dwell-milliseconds="350" is-push-and-drag-allowed="false">
+            <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
+            <changer-mid-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <changer-mid-to-mid-2-speed>1.0</changer-mid-to-mid-2-speed>
+            <changer-mid-location-2 units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <changer-mid-2-to-end-speed>1.0</changer-mid-2-to-end-speed>
+            <changer-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <calibration angle-subdivisions="6" allow-misdetections="0" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="false" runout-compensation-algorithm="ModelCameraOffset" version="2.0" recalibration-trigger="Manual" offset-threshold="0.0">
+               <pipeline>
+                  <stages>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" settle-first="true" count="1"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="1" enabled="true" diameter="150"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="2" enabled="true" conversion="Bgr2Gray"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="3" enabled="true" threshold="15" auto="false" invert="false"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="4" enabled="true" kernel-size="5"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCirclesHough" name="results" enabled="true" min-distance="50" min-diameter="40" max-diameter="50" dp="1.0" param-1="120.0" param-2="5.0"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="5" enabled="true" image-stage-name="0"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="6" enabled="true" circles-stage-name="results" thickness="2">
+                        <color r="255" g="0" b="51" a="255"/>
+                        <center-color r="0" g="204" b="255" a="255"/>
+                     </cv-stage>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="7" enabled="false" prefix="runoutCalibration" suffix=".png"/>
+                  </stages>
+               </pipeline>
+               <runout-compensation-lookup class="java.util.HashMap">
+                  <entry>
+                     <string>N2</string>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.00298460631468623" center-y="-0.010476614699331855" radius="0.07153317219738879" phase-shift="-135.6773420215076" units="Millimeters"/>
+                  </entry>
+               </runout-compensation-lookup>
+               <offset-threshold-length value="0.5" units="Millimeters"/>
+               <calibration-Z-offset value="0.0" units="Millimeters"/>
+            </calibration>
+            <vacuum-level-part-on-low>135.0</vacuum-level-part-on-low>
+            <vacuum-level-part-on-high>250.0</vacuum-level-part-on-high>
+            <vacuum-level-part-off-low>100.0</vacuum-level-part-off-low>
+            <vacuum-level-part-off-high>134.999</vacuum-level-part-off-high>
             <diameter-low value="0.0" units="Millimeters"/>
          </nozzle-tip>
       </nozzle-tips>
       <driver class="org.openpnp.machine.reference.driver.GcodeDriver" communications="serial" connection-keep-alive="true" units="Millimeters" max-feed-rate="20000" backlash-offset-x="-0.2" backlash-offset-y="0.2" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="8000" connect-wait-time-milliseconds="3000" visual-homing-enabled="false" backslash-escaped-characters-enabled="false" name="GcodeDriver">
-         <serial line-ending-type="LF" port-name="COM4" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
+         <serial line-ending-type="LF" port-name="COM6" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
          <tcp line-ending-type="LF" ip-address="127.0.0.1" port="23" name="TcpCommunications"/>
          <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          <command type="COMMAND_CONFIRM_REGEX">
@@ -2700,7 +2712,7 @@
          </command>
          <command head-mountable-id="A1" type="ACTUATOR_READ_COMMAND">
             <text><![CDATA[; H1 N1VSENSE ACTUATOR_READ_COMMAND]]></text>
-            <text><![CDATA[G4P500; wait to settle]]></text>
+            <text><![CDATA[; G4P100 ; wait to settle 100 ms]]></text>
             <text><![CDATA[M105 ; read vacuum]]></text>
          </command>
          <command head-mountable-id="A1" type="ACTUATOR_READ_REGEX">
@@ -2833,7 +2845,7 @@
             </axis>
          </axes>
       </driver>
-      <pnp-job-processor class="org.openpnp.machine.reference.ReferencePnpJobProcessor" job-order="Part">
+      <pnp-job-processor class="org.openpnp.machine.reference.ReferencePnpJobProcessor" job-order="Part" max-vision-retries="3">
          <planner class="org.openpnp.machine.reference.ReferencePnpJobProcessor$SimplePnpJobPlanner"/>
       </pnp-job-processor>
       <fiducial-locator class="org.openpnp.machine.reference.vision.ReferenceFiducialLocator" enabled-averaging="false" repeat-fiducial-recognition="3">
