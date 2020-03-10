@@ -2,16 +2,25 @@
  * Controls AfterPlace
  */
  print('*************** Script Nozzle.AfterPlace.js ****************');
- var vac = machine.getActuatorByName("VAC");
+ /* var vac = machine.getActuatorByName("VAC"); */
  var blow = machine.getActuatorByName("BLOW");
- var sol = machine.getActuatorByName("H1VAC");
+ var sol; 
+ var name = nozzle.getName();
  var i, j = 0;
- 
- print('After Placing...');
- if (vac) {
-   print('vac off');
-   vac.actuate(false);  /* VAC off */
+
+ /* print('Nozzle: ' + name); */
+ if (name=='N1') {
+   sol = machine.getActuatorByName("H1VAC");
+ } else if (name=='N2') {
+   sol = machine.getActuatorByName("H2VAC");
+ } else {
+   sol = null; /* unknown */
  }
+ print('After Placing...');
+ /*if (vac) {
+   print('vac off');
+   vac.actuate(false); */ /* VAC off */
+ /*}*/
  if (sol) { /* solenoid */
    print('solenoid for blowing, led off');
    sol.actuate(false); /* LED off on solenoid ==> ready for blow */

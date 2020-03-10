@@ -21,6 +21,7 @@
       </footprint>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="R0402">
@@ -256,10 +257,6 @@
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
       </compatible-nozzle-tip-ids>
-   </package>
-   <package version="1.1" id="C_0603_1608Metric">
-      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
-      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
    </package>
    <package version="1.1" id="Schottky_VS-10BQ015HM3">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>

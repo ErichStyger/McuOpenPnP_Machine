@@ -2,7 +2,20 @@
  * Controls before picking a part
  */
  print('*************** Script Nozzle.BeforePick.js ****************');
- var sol = machine.getActuatorByName("H1VAC");
+ var sol;
+ var name = nozzle.getName();
+
+ print('Nozzle: ' + name);
+ if (name=='N1') {
+   sol = machine.getActuatorByName("H1VAC");
+   print('using H1VAC');
+ } else if (name=='N2') {
+   sol = machine.getActuatorByName("H2VAC");
+   print('using H2VAC');
+ } else {
+   sol = null; /* unknown */
+   print('unknown nozzle!');
+} 
  var vac = machine.getActuatorByName("VAC");
 
  print('SCRIPT: Before Picking......');
