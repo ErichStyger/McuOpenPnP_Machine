@@ -8,7 +8,7 @@
  var sol;
  var i, j = 0;
  
- /* print('Nozzle: ' + name); */
+ // print('Nozzle: ' + name);
  if (name=='N1') {
    sol = machine.getActuatorByName("H1VAC");
  } else if (name=='N2') {
@@ -19,23 +19,23 @@
 
  print('Discarding');
  if (vac) {
-   print('vac off');
+   // print('vac off');
    vac.actuate(false);  /* VAC off */
  }
  if (sol) { /* solenoid */
-   print('solenoid for blowing, led off');
+   // print('solenoid for blowing, led off');
    sol.actuate(false); /* LED off on solenoid ==> ready for blow */
  } else {
    print('sol is NULL!');
  }
  if (blow) {
-   print('blow on');
+   // print('blow on');
    blow.actuate(true); /* BLOW on */
    print('waiting....'); /* any better way? Thread.sleep() is not available? */
-   for(i=0; i<1000000; i++) {
+   for(i=0; i<200000; i++) {
      j++;
    }
-   print('blow off');
+   // print('blow off');s
    blow.actuate(false); /* BLOW off */
  } else {
    print('blow is NULL!');
