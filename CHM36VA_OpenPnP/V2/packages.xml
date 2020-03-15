@@ -159,12 +159,14 @@
       </footprint>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="LED_WS2812B-SIDE-A">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="LED_WS2812B-MINI">
