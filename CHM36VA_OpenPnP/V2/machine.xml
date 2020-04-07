@@ -7,8 +7,8 @@
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>NT1</string>
                   </compatible-nozzle-tip-ids>
-                  <head-offsets units="Millimeters" x="33.5" y="-18.0" z="-9.0" rotation="0.0"/>
-                  <safe-z value="0.0" units="Millimeters"/>
+                  <head-offsets units="Millimeters" x="33.5" y="-18.0" z="-8.5" rotation="0.0"/>
+                  <safe-z value="0.5" units="Millimeters"/>
                   <vacuum-actuator-name>N1VSENSE</vacuum-actuator-name>
                </nozzle>
                <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="N2" name="N2" pick-dwell-milliseconds="250" place-dwell-milliseconds="250" current-nozzle-tip-id="TIP1579800676936" changer-enabled="false" limit-rotation="true">
@@ -53,7 +53,7 @@
                </actuator>
             </actuators>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579800540239" name="Top Camera" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="ATM Camera PIL  \\?\usb#vid_2c86&amp;pid_0206&amp;mi_00#6&amp;2cb9566a&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" fps="10.0">
+               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579800540239" name="Top Camera" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="ATM Camera PIL  \\?\usb#vid_2c86&amp;pid_0206&amp;mi_00#6&amp;3a0b6c56&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" fps="10.0">
                   <units-per-pixel units="Millimeters" x="0.0162" y="0.0162" z="0.0" rotation="0.0"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -169,7 +169,7 @@
             <backoff-distance value="0.2" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1580228061341" name="FD06" enabled="true" part-id="C_0603-100nF" retry-count="3" pick-retry-count="3" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
-            <location units="Millimeters" x="57.51" y="99.937" z="-9.0" rotation="90.0"/>
+            <location units="Millimeters" x="57.51" y="99.937" z="-9.5" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="67.765" y="103.47" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.765" y="103.47" z="0.0" rotation="0.0"/>
             <feed-speed>0.05</feed-speed>
@@ -411,7 +411,7 @@
             <backoff-distance value="0.2" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1581344748747" name="FD26" enabled="true" part-id="LED_WS2812B-SIDE-A-WS2812B-SIDE-A" retry-count="3" pick-retry-count="3" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
-            <location units="Millimeters" x="58.254" y="373.924" z="-9.0" rotation="90.0"/>
+            <location units="Millimeters" x="58.254" y="373.924" z="-9.5" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="68.554" y="379.124" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="72.554" y="379.124" z="0.0" rotation="0.0"/>
             <feed-speed>0.05</feed-speed>
@@ -2638,7 +2638,7 @@
             <diameter-low value="0.0" units="Millimeters"/>
          </nozzle-tip>
       </nozzle-tips>
-      <driver class="org.openpnp.machine.reference.driver.GcodeDriver" communications="serial" connection-keep-alive="true" units="Millimeters" max-feed-rate="20000" backlash-offset-x="-0.2" backlash-offset-y="0.2" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="8000" connect-wait-time-milliseconds="3000" visual-homing-enabled="false" backslash-escaped-characters-enabled="false" name="GcodeDriver">
+      <driver class="org.openpnp.machine.reference.driver.GcodeDriver" communications="serial" connection-keep-alive="true" units="Millimeters" max-feed-rate="90000" backlash-offset-x="-0.2" backlash-offset-y="0.2" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="8000" connect-wait-time-milliseconds="3000" visual-homing-enabled="false" backslash-escaped-characters-enabled="false" name="GcodeDriver">
          <serial line-ending-type="LF" port-name="COM6" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
          <tcp line-ending-type="LF" ip-address="127.0.0.1" port="23" name="TcpCommunications"/>
          <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
