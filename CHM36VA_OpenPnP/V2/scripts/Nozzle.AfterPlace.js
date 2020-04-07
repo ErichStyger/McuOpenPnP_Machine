@@ -23,13 +23,8 @@
    print('sol is NULL!');
  }
  if (blow) {
-   /*print('blow on');*/
    blow.actuate(true); /* BLOW on */
-   print('waiting....'); /* any better way? Thread.sleep() is not available? */
-   for(i=0; i<200000; i++) {
-     j++;
-   }
-   /*print('blow off');*/
+   java.lang.Thread.sleep(100);
    blow.actuate(false); /* BLOW off */
  } else {
    print('blow is NULL!');

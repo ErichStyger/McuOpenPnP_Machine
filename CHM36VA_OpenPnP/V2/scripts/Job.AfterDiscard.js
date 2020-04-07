@@ -31,10 +31,7 @@
  if (blow) {
    // print('blow on');
    blow.actuate(true); /* BLOW on */
-   print('waiting....'); /* any better way? Thread.sleep() is not available? */
-   for(i=0; i<200000; i++) {
-     j++;
-   }
+   java.lang.Thread.sleep(500);
    // print('blow off');s
    blow.actuate(false); /* BLOW off */
  } else {
