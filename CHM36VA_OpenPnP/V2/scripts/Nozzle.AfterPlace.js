@@ -30,3 +30,10 @@
    print('blow is NULL!');
  }
  print('*************** END Nozzle.AfterPlace.js ****************');
+
+/*
+// example to send a G code. G4 P100 ; wait 100 ms   G4P0.1 ; delay 0.1 sec
+machine.getDriver().sendCommand("G4P100");
+or
+machine.getDriver().subDrivers.get(0).sendCommand("G4P100");
+*/
