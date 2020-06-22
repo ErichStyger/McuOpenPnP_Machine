@@ -32,17 +32,23 @@
    <part id="SOT-23-PMV55ENEAR" height-units="Millimeters" height="1.0" package-id="SOT-23" speed="1.0"/>
    <part id="SOT-23-BSS138" height-units="Millimeters" height="1.0" package-id="SOT-23" speed="1.0"/>
    <part id="D_0603-DNP-CDBURT0530LL-HF" height-units="Millimeters" height="0.45" package-id="D_0603" speed="1.0"/>
-   <part id="R_0603-DNP-10k" height-units="Millimeters" height="0.0" package-id="R_0603" speed="1.0"/>
    <part id="Schottky_VS-10BQ015HM3-VS-10BQ015HM3" height-units="Millimeters" height="2.4" package-id="Schottky_VS-10BQ015HM3" speed="1.0"/>
    <part id="SHT30-SHT30-DIS-B" height-units="Millimeters" height="0.9" package-id="SHT30" speed="1.0"/>
-   <part id="SOT-23_2T-AH3572_45" height-units="Millimeters" height="0.0" package-id="SOT-23_2T" speed="1.0"/>
-   <part id="SOT-23_2T-AH3572_225" height-units="Millimeters" height="0.0" package-id="SOT-23_2T" speed="1.0"/>
-   <part id="SOT-23_2T-AH3572_315" height-units="Millimeters" height="0.0" package-id="SOT-23_2T" speed="1.0"/>
-   <part id="SOT-23_2T-AH3572_135" height-units="Millimeters" height="0.0" package-id="SOT-23_2T" speed="1.0"/>
    <part id="D_0603-CDBURT0530LL-HF" height-units="Millimeters" height="0.5" package-id="D_0603" speed="1.0"/>
    <part id="R_0805-330" height-units="Millimeters" height="0.5" package-id="R0805" speed="1.0"/>
    <part id="R_0805-10k" height-units="Millimeters" height="0.5" package-id="R0805" speed="1.0"/>
    <part id="D_0805-LED_Red" height-units="Millimeters" height="0.5" package-id="R0805" speed="1.0"/>
    <part id="D_0805-LED_Green" height-units="Millimeters" height="0.5" package-id="R0805" speed="1.0"/>
    <part id="C_0805-100nF" height-units="Millimeters" height="0.5" package-id="R0805" speed="1.0"/>
+   <part id="C_0603-10uF" height-units="Millimeters" height="0.5" package-id="C_0603" speed="1.0"/>
+   <part id="CP_Elec_10x10.5-220uF/25V" height-units="Millimeters" height="0.0" package-id="CP_Elec_10x10.5" speed="1.0"/>
+   <part id="R_0603-470" height-units="Millimeters" height="0.5" package-id="R0603" speed="1.0"/>
+   <part id="QFN-32-1EP_5x5mm_Pitch0.5mm-K02FN64VFM10" height-units="Millimeters" height="1.0" package-id="QFN-32-1EP_5x5mm_Pitch0.5mm" speed="1.0"/>
+   <part id="SSOP-20_5.3x7.2mm_Pitch0.65mm-74HCT245" height-units="Millimeters" height="0.0" package-id="SSOP-20_5.3x7.2mm_Pitch0.65mm" speed="1.0"/>
+   <part id="SOT-23-5-DIO7003" height-units="Millimeters" height="0.0" package-id="SOT-23-5" speed="1.0"/>
+   <part id="SOIC-28W_7.5x17.9mm_Pitch1.27mm-MS_X12.017" height-units="Millimeters" height="0.0" package-id="SOIC-28W_7.5x17.9mm_Pitch1.27mm" speed="1.0"/>
+   <part id="R_0603-510" height-units="Millimeters" height="0.5" package-id="R0603" speed="1.0"/>
+   <part id="R_0603-39" height-units="Millimeters" height="0.5" package-id="R0603" speed="1.0"/>
+   <part id="NICHICON_A-10uF" height-units="Millimeters" height="0.0" package-id="NICHICON_A" speed="1.0"/>
+   <part id="CAP0603-1uF" height-units="Millimeters" height="0.0" package-id="CAP0603" speed="1.0"/>
 </openpnp-parts>

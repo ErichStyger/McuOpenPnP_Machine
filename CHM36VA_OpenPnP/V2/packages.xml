@@ -12,6 +12,7 @@
       </footprint>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="R0603" description="R0603">
@@ -89,6 +90,7 @@
       </footprint>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="SOT-26">
@@ -102,6 +104,7 @@
       </footprint>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="FIDU_HOME" description="Special fiducial for visual homing">
@@ -150,6 +153,7 @@
       </footprint>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="C_0603">
@@ -173,6 +177,7 @@
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="CP_Elec_5x5.3">
@@ -183,12 +188,14 @@
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="R_0603">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="SW_SPST_KMR2_Small">
@@ -200,24 +207,28 @@
       </footprint>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="SOP-28_X12.017">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="SOIC-8_3.9x4.9mm_Pitch1.27mm">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="LQFP-48_7x7mm_Pitch0.5mm">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="SOT-23_2T">
@@ -228,6 +239,7 @@
       </footprint>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="Fiducial_1mm_Dia_2.54mm_Outer_CopperTop">
@@ -238,26 +250,27 @@
    </package>
    <package version="1.1" id="SWD_Pin_Header_Straight_2x05_Pitch1.27mm_SMD">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
-      <compatible-nozzle-tip-ids class="java.util.ArrayList">
-         <string>NT1</string>
-      </compatible-nozzle-tip-ids>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
    </package>
    <package version="1.1" id="D_0603">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="D_SOT-23_ANK">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="SHT30">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
+         <string>TIP1579800676936</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="Schottky_VS-10BQ015HM3">
@@ -265,5 +278,33 @@
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
          <string>NT1</string>
       </compatible-nozzle-tip-ids>
+   </package>
+   <package version="1.1" id="CP_Elec_10x10.5">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="QFN-32-1EP_5x5mm_Pitch0.5mm">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="SSOP-20_5.3x7.2mm_Pitch0.65mm">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="SOT-23-5">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="SOIC-28W_7.5x17.9mm_Pitch1.27mm">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="NICHICON_A">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="CAP0603">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
    </package>
 </openpnp-packages>
