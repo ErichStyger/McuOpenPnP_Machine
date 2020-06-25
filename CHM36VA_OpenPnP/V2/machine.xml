@@ -2923,7 +2923,7 @@
          </command>
          <command head-mountable-id="ACT1579799796417" type="ACTUATE_BOOLEAN_COMMAND">
             <text><![CDATA[M81{True:6}{False:7} ; DRAGPIN M816 down / M817 release]]></text>
-            <text><![CDATA[G4P50 ; 100ms delay to deploy/retract]]></text>
+            <text><![CDATA[G4P100 ; 100ms delay to deploy/retract]]></text>
          </command>
          <command head-mountable-id="ACT1579799796417" type="ACTUATOR_READ_COMMAND">
             <text><![CDATA[M119 ; DRAGPIN endstop status]]></text>
