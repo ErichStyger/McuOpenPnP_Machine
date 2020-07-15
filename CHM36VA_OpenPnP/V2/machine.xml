@@ -7,7 +7,7 @@
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>NT1</string>
                   </compatible-nozzle-tip-ids>
-                  <head-offsets units="Millimeters" x="33.5" y="-18.0" z="-8.5" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="33.4" y="-18.0" z="-8.5" rotation="0.0"/>
                   <safe-z value="0.5" units="Millimeters"/>
                   <vacuum-actuator-name>N1VSENSE</vacuum-actuator-name>
                </nozzle>
@@ -53,7 +53,7 @@
                </actuator>
             </actuators>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579800540239" name="Top Camera" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="ATM Camera PIL  \\?\usb#vid_2c86&amp;pid_0206&amp;mi_00#7&amp;35556615&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" fps="10.0">
+               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1579800540239" name="Top Camera" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" unique-id="ATM Camera PIL  \\?\usb#vid_2c86&amp;pid_0206&amp;mi_00#7&amp;229bb570&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" fps="10.0">
                   <units-per-pixel units="Millimeters" x="0.0162" y="0.0162" z="0.0" rotation="0.0"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -144,7 +144,7 @@
             </vision>
             <backoff-distance value="0.2" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1580227189808" name="FD04" enabled="true" part-id="R_0603-4k7" retry-count="3" pick-retry-count="3" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1580227189808" name="FD04" enabled="true" part-id="C_0603-10uF" retry-count="3" pick-retry-count="3" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="57.563" y="74.02" z="-9.0" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="67.465" y="77.501" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.465" y="77.501" z="0.0" rotation="0.0"/>
@@ -192,7 +192,7 @@
             </vision>
             <backoff-distance value="0.2" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1580392485694" name="FD11" enabled="true" part-id="C_0805-100nF" retry-count="3" pick-retry-count="3" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1580392485694" name="FD11" enabled="true" part-id="SOT-23-XC6206-3.3V" retry-count="3" pick-retry-count="3" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="57.719" y="164.815" z="-9.0" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="67.933" y="168.412" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="71.933" y="168.412" z="0.0" rotation="0.0"/>
@@ -504,17 +504,17 @@
                <camera-matrix length="9">6.95181195069896E-310, 6.95181195056774E-310, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
                <distortion-coefficients length="5">4.9E-324, 7.63918484925E-313, 3.5604305343967845E-307, 1.6021930623879718E-306, 2.447635570273665E-307</distortion-coefficients>
             </calibration>
-            <back-light-compensation property="BackLightCompensation" value="28" auto="false"/>
-            <brightness property="Brightness" value="16" auto="false"/>
-            <contrast property="Contrast" value="68" auto="false"/>
-            <exposure property="Exposure" value="-10" auto="false"/>
+            <back-light-compensation property="BackLightCompensation" value="78" auto="false"/>
+            <brightness property="Brightness" value="0" auto="false"/>
+            <contrast property="Contrast" value="57" auto="false"/>
+            <exposure property="Exposure" value="-9" auto="false"/>
             <focus property="Focus"/>
-            <gain property="Gain" value="46" auto="false"/>
-            <gamma property="Gamma" value="117" auto="false"/>
-            <hue property="Hue" value="-409" auto="false"/>
+            <gain property="Gain" value="65" auto="false"/>
+            <gamma property="Gamma" value="100" auto="false"/>
+            <hue property="Hue" value="-2000" auto="false"/>
             <power-line-frequency property="PowerLineFrequency" value="1" auto="false"/>
-            <saturation property="Saturation" value="55" auto="false"/>
-            <sharpness property="Sharpness" value="3" auto="false"/>
+            <saturation property="Saturation" value="58" auto="false"/>
+            <sharpness property="Sharpness" value="1" auto="false"/>
             <white-balance property="WhiteBalance" value="2800" auto="false"/>
             <zoom property="Zoom" value="0" auto="false"/>
          </camera>
@@ -1511,7 +1511,7 @@
                </entry>
                <entry>
                   <string>R_0603-39</string>
-                  <part-settings enabled="true" pre-rotate-usage="Default">
+                  <part-settings enabled="true" pre-rotate-usage="AlwaysOn">
                      <pipeline>
                         <stages>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" settle-first="true" count="1"/>
@@ -2792,10 +2792,10 @@
                <offset-threshold-length value="0.5" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
             </calibration>
-            <vacuum-level-part-on-low>130.0</vacuum-level-part-on-low>
+            <vacuum-level-part-on-low>129.0</vacuum-level-part-on-low>
             <vacuum-level-part-on-high>250.0</vacuum-level-part-on-high>
             <vacuum-level-part-off-low>100.0</vacuum-level-part-off-low>
-            <vacuum-level-part-off-high>129.999</vacuum-level-part-off-high>
+            <vacuum-level-part-off-high>129.0</vacuum-level-part-off-high>
             <diameter-low value="0.0" units="Millimeters"/>
          </nozzle-tip>
          <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1579800676936" name="NT2" pick-dwell-milliseconds="350" place-dwell-milliseconds="350" is-push-and-drag-allowed="false">

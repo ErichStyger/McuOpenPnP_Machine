@@ -51,4 +51,5 @@
    <part id="R_0603-39" height-units="Millimeters" height="0.5" package-id="R0603" speed="1.0"/>
    <part id="NICHICON_A-10uF" height-units="Millimeters" height="0.0" package-id="NICHICON_A" speed="1.0"/>
    <part id="CAP0603-1uF" height-units="Millimeters" height="0.0" package-id="CAP0603" speed="1.0"/>
+   <part id="SSOP-20_4.4x6.5mm_Pitch0.65mm-74HCT245" height-units="Millimeters" height="0.0" package-id="SSOP-20_4.4x6.5mm_Pitch0.65mm" speed="1.0"/>
 </openpnp-parts>

@@ -307,4 +307,8 @@
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
       <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
    </package>
+   <package version="1.1" id="SSOP-20_4.4x6.5mm_Pitch0.65mm">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
 </openpnp-packages>
