@@ -44,12 +44,15 @@
    <part id="CP_Elec_10x10.5-220uF/25V" height-units="Millimeters" height="0.0" package-id="CP_Elec_10x10.5" speed="1.0"/>
    <part id="R_0603-470" height-units="Millimeters" height="0.5" package-id="R0603" speed="1.0"/>
    <part id="QFN-32-1EP_5x5mm_Pitch0.5mm-K02FN64VFM10" height-units="Millimeters" height="1.0" package-id="QFN-32-1EP_5x5mm_Pitch0.5mm" speed="1.0"/>
-   <part id="SSOP-20_5.3x7.2mm_Pitch0.65mm-74HCT245" height-units="Millimeters" height="0.0" package-id="SSOP-20_5.3x7.2mm_Pitch0.65mm" speed="1.0"/>
-   <part id="SOT-23-5-DIO7003" height-units="Millimeters" height="0.0" package-id="SOT-23-5" speed="1.0"/>
-   <part id="SOIC-28W_7.5x17.9mm_Pitch1.27mm-MS_X12.017" height-units="Millimeters" height="0.0" package-id="SOIC-28W_7.5x17.9mm_Pitch1.27mm" speed="1.0"/>
+   <part id="SSOP-20_5.3x7.2mm_Pitch0.65mm-74HCT245" height-units="Millimeters" height="1.0" package-id="SSOP-20_5.3x7.2mm_Pitch0.65mm" speed="1.0"/>
+   <part id="SOT-23-5-DIO7003" height-units="Millimeters" height="1.0" package-id="SOT-23-5" speed="1.0"/>
+   <part id="SOIC-28W_7.5x17.9mm_Pitch1.27mm-MS_X12.017" height-units="Millimeters" height="2.0" package-id="SOIC-28W_7.5x17.9mm_Pitch1.27mm" speed="1.0"/>
    <part id="R_0603-510" height-units="Millimeters" height="0.5" package-id="R0603" speed="1.0"/>
    <part id="R_0603-39" height-units="Millimeters" height="0.5" package-id="R0603" speed="1.0"/>
    <part id="NICHICON_A-10uF" height-units="Millimeters" height="0.0" package-id="NICHICON_A" speed="1.0"/>
    <part id="CAP0603-1uF" height-units="Millimeters" height="0.0" package-id="CAP0603" speed="1.0"/>
    <part id="SSOP-20_4.4x6.5mm_Pitch0.65mm-74HCT245" height-units="Millimeters" height="0.0" package-id="SSOP-20_4.4x6.5mm_Pitch0.65mm" speed="1.0"/>
+   <part id="=Value-ATDS3534UV405B" height-units="Millimeters" height="2.0" package-id="=Value" speed="1.0"/>
+   <part id="0R-0805J" height-units="Millimeters" height="0.5" package-id="0R" speed="1.0"/>
+   <part id="PMV28ENEAR-SOT23" height-units="Millimeters" height="1.0" package-id="PMV28ENEAR" speed="1.0"/>
 </openpnp-parts>

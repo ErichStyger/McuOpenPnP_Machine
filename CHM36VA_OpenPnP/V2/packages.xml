@@ -89,8 +89,8 @@
          <pad name="3" x="0.0" y="1.1" width="0.8" height="0.8" rotation="0.0" roundness="0.0"/>
       </footprint>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
-         <string>NT1</string>
          <string>TIP1579800676936</string>
+         <string>NT1</string>
       </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="SOT-26">
@@ -293,7 +293,10 @@
    </package>
    <package version="1.1" id="SOT-23-5">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
-      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>TIP1579800676936</string>
+         <string>NT1</string>
+      </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="SOIC-28W_7.5x17.9mm_Pitch1.27mm">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
@@ -310,5 +313,25 @@
    <package version="1.1" id="SSOP-20_4.4x6.5mm_Pitch0.65mm">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
       <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="=Value">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>NT1</string>
+      </compatible-nozzle-tip-ids>
+   </package>
+   <package version="1.1" id="0R">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>NT1</string>
+         <string>TIP1579800676936</string>
+      </compatible-nozzle-tip-ids>
+   </package>
+   <package version="1.1" id="PMV28ENEAR">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>NT1</string>
+         <string>TIP1579800676936</string>
+      </compatible-nozzle-tip-ids>
    </package>
 </openpnp-packages>
