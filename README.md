@@ -11,6 +11,7 @@ You can find overview videos about it on YouTube:
 - OpenPnP Pick&Place Component Iteration: https://youtu.be/lf4krekVuLk
 - OpenPnP and Board Fiducials: https://youtu.be/fgSJTeFeqYE
 - Nozzle Change with OpenPnP: https://youtu.be/CIzX5zvgmOw
+- CHM-T32VA OpenPnP Conversion: https://mcuoneclipse.com/2020/05/03/retrofitting-a-charmhigh-chm-t36va-machine-with-openpnp/
 
 And check out my blog articles on OpenPnP: https://mcuoneclipse.com/tag/openpnp/
 
